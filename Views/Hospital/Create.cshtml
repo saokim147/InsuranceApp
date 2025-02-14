@@ -1,0 +1,81 @@
+﻿@model HospitalViewModel
+@{
+    ViewData["Title"] = "Thêm Mẫu";
+}
+<div
+    class="relative flex flex-col overflow-hidden rounded-xl border bg-white p-10 shadow-sm dark:bg-neutral-900 dark:border-neutral-800">
+    <h2 class="mb-4 text-xl font-bold text-gray-800 dark:text-neutral-200">Thêm Cơ sở y tế</h2>
+    <form asp-action="Create" asp-controller="Hospital" method="post">
+        @Html.AntiForgeryToken()
+        <div class="mb-4 grid gap-4 sm:grid-cols-2 sm:gap-6 sm:mb-5">
+            <div class="sm:col-span-2">
+                <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
+                    asp-for="HospitalName">Tên cơ sở y tế</label>
+                <input class="input w-full" asp-for="HospitalName">
+                <span asp-validation-for="HospitalName" class="text-sm text-red-500"></span>
+            </div>
+            <div class="w-full">
+                <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
+                    asp-for="HospitalAddress">Địa chỉ</label>
+                <input class="input w-full" asp-for="HospitalAddress">
+                <span asp-validation-for="HospitalAddress" class="text-sm text-red-500"></span>
+            </div>
+            <div class="w-full">
+                <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
+                    asp-for="PhoneNumber">Số điện thoại</label>
+                <input class="input w-full" asp-for="PhoneNumber">
+            </div>
+            <div class="w-full">
+                <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
+                    asp-for="BillingTime">Thời gian làm việc</label>
+                <input class="input w-full" asp-for="BillingTime">
+            </div>
+            <div class="w-full">
+                <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
+                    asp-for="InsuranceAndDirectBilling">Bảo hiểm và trả tiền viện phí trực tiếp</label>
+                <input class="input w-full" asp-for="InsuranceAndDirectBilling">
+            </div>
+            <div class="ps pe-2 sm:col-span-2">
+                <label class="mb-2 block text-sm font-medium text-gray-800" asp-for="Note">Ghi chú</label>
+                <textarea rows="8" class="input w-full" asp-for="Note"></textarea>
+            </div>
+        </div>
+        <h3 class="text-gray-800 dark:text-neutral-200">Loại hình và dịch vụ</h3>
+        <div class="my-2 flex flex-wrap">
+            <div class="me-4 mt-5 flex items-center">
+                <input type="checkbox" class="check size-4" asp-for="IsPublicHospital" >
+                <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">Bệnh viện công</label>
+            </div>
+            <div class="me-4 mt-5 flex items-center">
+                <input type="checkbox" class="check size-4" asp-for="InPatient" >
+                <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">Nội Khoa</label>
+            </div>
+            <div class="me-4 mt-5 flex items-center">
+                <input type="checkbox" class="check size-4" asp-for="OutPatient">
+                <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">Ngoại Khoa</label>
+            </div>
+            <div class="me-4 mt-5 flex items-center">
+                <input type="checkbox" class="check size-4" asp-for="Dental">
+                <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">Nha Khoa</label>
+            </div>
+        </div>
+        <div class="mt-5 flex items-center space-x-4">
+            <button type="submit" class="btn btn-primary">Lưu kết quả</button>
+            <button type="button" class="btn btn-outline-primary" id="close-btn">Đóng</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('close-btn').addEventListener('click', () => {
+        HSOverlay.close('#addFormContainer');
+    })
+</script>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

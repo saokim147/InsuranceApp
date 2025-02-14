@@ -1,0 +1,112 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", serif;
+}
+
+.check {
+    @apply shrink-0 mt-0.5 border-gray-200 text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800;
+}
+
+.btn {
+    @apply shrink-0 inline-flex h-12 min-h-[3rem] cursor-pointer select-none flex-wrap items-center justify-center gap-2 rounded-lg border border-transparent px-4 text-center text-sm;
+    @apply focus:ring-1 focus:outline-none disabled:opacity-50 disabled:pointer-events-none;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-600;
+}
+
+
+.btn-secondary {
+    @apply bg-secondary-300 text-black hover:bg-secondary-400 focus:ring-secondary-400;
+}
+
+
+.btn-neutral {
+    @apply bg-neutral-700 text-white hover:ring-neutral-800 focus:ring-neutral-800;
+}
+
+.input {
+    @apply w-full items-center rounded-md border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-transparent dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600;
+}
+
+.goto-box {
+    @apply block min-h-[38px] w-12 rounded-lg border border-gray-200 px-2.5 py-2 text-center text-sm disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none;
+    -moz-appearance: textfield;
+}
+
+.header {
+    @apply px-5 py-3 text-start text-sm font-bold uppercase dark:text-neutral-500;
+}
+
+.row {
+    @apply whitespace-nowrap px-5 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200;
+}
+
+
+
+.link-primary {
+    @apply border border-transparent text-primary-500 hover:text-primary-700 focus:outline-none;
+}
+
+.btn-outline-primary {
+    @apply border border-primary-500 bg-white text-primary-500 hover:border-primary-400 hover:text-primary-400 focus:outline-none focus:border-primary-400 focus:text-primary-400 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.ts-control {
+    @apply mt-2 w-full rounded-md border border-gray-300 py-1 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 h-9 sm:text-sm sm:leading-6;
+  }
+  
+  .ts-control input {
+    @apply !pr-5 text-sm !m-0;
+  }
+  
+  .ts-wrapper.plugin-remove_button .item {
+    @apply rounded-md;
+  }
+  .ts-wrapper.multi .ts-control > div {
+    @apply p-0 m-0 pl-1;
+  }
+  
+  .ts-wrapper.plugin-remove_button .item .remove {
+    @apply border-none text-lg leading-none py-1 rounded-r-lg;
+  }
+  
+  .ts-dropdown {
+    @apply rounded-md border border-solid border-t border-gray-300;
+  }
+  
+  .ts-dropdown [data-selectable].option, .ts-dropdown .no-results {
+    @apply py-2;
+  }
+  .ts-dropdown [data-selectable].option:first-child {
+    @apply rounded-t-md;
+  }
+  
+  .ts-dropdown [data-selectable].option:last-child {
+    @apply rounded-b-md;
+  }
+  .ts-dropdown .create:hover, .ts-dropdown .option:hover, .ts-dropdown .active {
+    @apply bg-indigo-100 text-indigo-900;
+  }
+  
+  .ts-dropdown .spinner {
+    @apply h-auto w-auto;
+  }
+  
+  .ts-dropdown .spinner:after {
+    @apply h-5 w-5 border-2 p-0 my-0 inline-block;
+  }
+  
+  .ts-wrapper:not(.form-control):not(.form-select).single .ts-control {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    print-color-adjust: exact;
+  }

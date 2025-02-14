@@ -1,0 +1,121 @@
+﻿@model InsuranceViewModel
+@{
+	ViewData["Title"] = "Home Page";
+}
+<div class="container max-h-full rounded-md bg-neutral-100 p-5 dark:bg-neutral-700">
+	<div class="mx-auto flex max-w-full flex-col gap-3 p-5 sm:flex-row sm:items-start sm:flex-wrap xl:mx-0">
+		<div class="relative md:w-80">
+			<input type="text" name="hospitalName" class="input" id="hospital-search"
+				hx-get="@Url.Action("Index", "Hospital")" hx-trigger="input changed delay:250ms"
+				hx-target="#hospital-table" placeholder="Cơ sơ y tế">
+			<span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+				<button type="button" class="size-4">
+					<img alt="Search" src="~/static/icon/search-icon.svg" />
+				</button>
+			</span>
+		</div>
+		<button class="btn btn-secondary" id="toggle-btn">
+			Mở rộng
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+				stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="m6 9 6 6 6-6"></path>
+			</svg>
+		</button>
+		<button type="button" class="btn btn-primary px-16" id="enter-btn">Tìm kiếm</button>
+	</div>
+	<div class="flex w-full rounded-md bg-white px-5 dark:bg-neutral-800" id="accordation" style="display: none;">
+		<div class="mt-5 flex w-full flex-col gap-5 lg:flex-row">
+			<div class="relative w-40">
+				<select id="city-select">
+					<option value="" selected disabled>Thành phố</option>
+				</select>
+			</div>
+			<div class="relative w-40">
+				<select id="district-select">
+					<option value="" selected disabled>Quận</option>
+				</select>
+			</div>
+			<div class="relative w-40">
+				<select id="ward-select">
+					<option value="" selected disabled>Phường</option>
+				</select>
+			</div>
+		</div>
+		<!-- Checkbox Filters -->
+		<div class="my-5 flex flex-wrap">
+			<div class="me-4 mt-5 flex items-center">
+				<input type="checkbox" class="check size-4" id="public-hospital-checkbox">
+				<label for="public-hospital-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">Bệnh viện
+					công</label>
+			</div>
+			<div class="me-4 mt-5 flex items-center">
+				<input type="checkbox" class="check size-4" id="in-patient-checkbox">
+				<label for="in-patient-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">Nội
+					Khoa</label>
+			</div>
+			<div class="me-4 mt-5 flex items-center">
+				<input type="checkbox" class="check size-4" id="out-patient-checkbox">
+				<label for="out-patient-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">Ngoại
+					Khoa</label>
+			</div>
+			<div class="me-4 mt-5 flex items-center">
+				<input type="checkbox" class="check size-4" id="dental-checkbox">
+				<label for="dental-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">Nha Khoa</label>
+			</div>
+		</div>
+		<button class="btn btn-neutral mb-5" id="reset-btn">Xóa Lọc</button>
+	</div>
+
+
+	<div class="m-5 flex justify-end md:px-4">
+		<div class="hs-dropdown relative inline-flex items-center gap-x-2">
+			@if (User.Identity.IsAuthenticated)
+			{
+				<button class="btn btn-outline-primary" aria-haspopup="false" aria-expanded="false"
+					data-hs-overlay="#addFormContainer" hx-target="#addForm" hx-get="@Url.Action("Create", "Hospital")"
+					aria-controls="links">
+					Thêm cơ sở
+					<img src="~/static/icon/add.svg" />
+				</button>
+
+				<div id="addFormContainer"
+					class="hs-overlay z-[80] fixed start-0 top-0 hidden size-full overflow-y-auto overflow-x-hidden"
+					role="dialog" tabindex="-1" aria-labelledby="hs-notifications-label">
+					<div id="addForm"
+						class="opacity-0 m-3 mt-0 transition-all ease-out sm:max-w-lg sm:w-full sm:mx-auto hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500">
+					</div>
+				</div>
+			}
+			<button id="download-btn" type="button" class="hs-dropdown-toggle btn btn-primary flex items-center gap-2"
+				aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+				<img src="~/static/icon/export.svg" class="size-5" />
+				Xuất file
+				<img src="~/static/icon/dropdown.svg" class="size-4 hs-dropdown-open:rotate-180" />
+			</button>
+
+			<div class="hs-dropdown-menu opacity-0 z-10 absolute right-0 mt-2 hidden w-56 min-w-60 rounded-lg bg-white p-2 shadow-md transition-[opacity,margin] dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 hs-dropdown-open:opacity-100"
+				role="menu" aria-orientation="vertical">
+				<a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+					href="@Url.Action("Export", "Hospital", new { fileType = "pdf" })" download>
+					PDF
+				</a>
+				<a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+					href="@Url.Action("Export", "Hospital", new { fileType = "excel" })" download>
+					Excel
+				</a>
+				<a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
+					href="@Url.Action("Export", "Hospital", new { fileType = "csv" })" download>
+					CSV
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container max-h-full rounded-md bg-neutral-100 p-5 dark:bg-neutral-700" id="hospital-table">
+	@await Html.PartialAsync("_HospitalList", Model)
+</div>
+</div>
+
+<script src="~/lib/tom-select/dist/js/tom-select.complete.min.js"></script>
