@@ -1,0 +1,68 @@
+﻿<div
+    class="pointer-events-auto flex flex-col rounded-xl border bg-white shadow-sm dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+    <div class="flex items-center justify-between border-b px-4 py-3 dark:border-neutral-700">
+        <h3 id="hs-basic-modal-label" class="font-bold text-gray-800 dark:text-white">
+            Xóa Cơ sở y tế
+        </h3>
+        <button type="button" 
+            class="inline-flex size-8 items-center justify-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+            aria-label="Close" data-hs-overlay="#deleteConfirmed">
+            <span class="sr-only">Close</span>
+            <heroicon name="XMark" class="shrink-0 size-4"></heroicon>
+        </button>
+
+    </div>
+
+    <div class="overflow-y-auto p-4">
+        <p class="mt-1 text-gray-800 dark:text-neutral-400">
+            Bạn có muốn xóa <span id="delete-count"></span> CSYT đã chọn Không ?
+        </p>
+    </div>
+    <div class="flex items-center justify-end gap-x-2 border-t px-4 py-3 dark:border-neutral-700">
+        <button type="button" data-hs-overlay="#deleteConfirmed"
+            class="inline-flex items-center gap-x-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+            Đóng
+        </button>
+        <button type="button" 
+            hx-delete="@Url.Action("Delete", "Hospital")"
+            hx-vals='js:{"DeletedIds": getSessionIdList()}'
+            hx-target="#hospital-table" 
+            onclick="HSOverlay.close('#deleteConfirmed')"
+            class="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+            Xóa
+        </button>
+    </div>
+</div> 
+<script>
+
+    const successDeleteHandler = () => {
+        sessionStorage.clear();
+        window.dispatchEvent(
+            new CustomEvent("notify", {
+                detail: {
+                    variant: "success",
+                    title: "Success!",
+                    message: "Xóa thành công",
+                },
+            })
+        );
+    };
+
+    const failedDeleteHandler = () => {
+        window.dispatchEvent(
+            new CustomEvent("notify", {
+                detail: {
+                    variant: "danger",
+                    title: "⚠",
+                    message: "Xóa thất bại",
+                },
+            })
+        );
+    };
+
+    document.removeEventListener("successDeleteEvent", successDeleteHandler);
+    document.removeEventListener("failedDeleteEvent", failedDeleteHandler);
+
+    document.addEventListener("successDeleteEvent", successDeleteHandler);
+    document.addEventListener("failedDeleteEvent", failedDeleteHandler);
+</script>

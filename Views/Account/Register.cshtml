@@ -1,0 +1,38 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Đăng kí tài khoản";
+}
+<div class="mx-auto flex h-screen items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+    <div class="w-full rounded-lg border bg-white p-10 dark:bg-neutral-800 dark:border-gray-700 sm:max-w-md md:mt-0">
+        <h2 class="mb-4 text-xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white md:text-2xl">
+            @ViewData["Title"]</h2>
+        <form asp-action="Register" asp-controller="Account" method="post">
+            <div class="mb-4">
+                <label asp-for="Email"
+                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                <input asp-for="Email" class="input" type="email" placeholder="Email">
+                <span asp-validation-for="Email" class="text-xs italic text-red-500"></span>
+            </div>
+            <div class="mb-4">
+                <label asp-for="Password" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Mật
+                    khẩu</label>
+                <input asp-for="Password" class="input" type="password" placeholder="Password">
+                <span asp-validation-for="Password" class="text-xs italic text-red-500"></span>
+            </div>
+            <div class="mb-6">
+                <label asp-for="ConfirmPassword"
+                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Xác nhận mật
+                    khẩu</label>
+                <input asp-for="ConfirmPassword" class="input" type="password" placeholder="Confirm Password">
+                <span asp-validation-for="ConfirmPassword" class="text-xs italic text-red-500"></span>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Đăng kí</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+}

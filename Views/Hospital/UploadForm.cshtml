@@ -1,0 +1,16 @@
+﻿<div class="relative max-w-2xl rounded-md border border-neutral-200 bg-white px-4 py-8 dark:bg-neutral-800 lg:mx-auto lg:py-16">
+    <form id="uploadForm" 
+          class="max-w-sm" 
+          hx-encoding="multipart/form-data" 
+          hx-post="@Url.Action("Upload", "Hospital")">
+          <h1 class="text-center text-black dark:text-white">Tải File lên</h1>
+          <label for="file-upload" class="sr-only">Chọn file để đọc</label>
+          <input type="file" id="file-upload" name="file" class="block w-full rounded-lg border border-gray-200 text-sm shadow-sm file:bg-gray-50 file:border-0 file:me-4 file:py-3 file:px-4 focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:file:bg-neutral-700 dark:file:text-neutral-400">
+          <div class="mt-4 flex flex-col">
+            <input type="checkbox" name="isBlackList" value="true">
+          </div>
+          <button type="submit" class="btn btn-primary mt-4">
+            Upload
+          </button>
+    </form>
+</div>

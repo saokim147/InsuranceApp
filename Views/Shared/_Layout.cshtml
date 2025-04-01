@@ -1,0 +1,88 @@
+﻿@using System.Globalization
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InsuranceProject</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/maplibre-gl/maplibre-gl.min.css" />
+    <script src="~/js/themeSwitch.js" defer></script>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+
+<body class="bg white dark:bg-neutral-900">
+    <header
+        class="relative mb-5 flex w-full flex-wrap bg-white py-3 text-sm shadow-sm dark:bg-neutral-800 dark:border-neutral-500 sm:justify-start sm:flex-nowrap :backdropParent">
+        <nav class="mx-auto w-full max-w-[85rem] px-4 sm:flex sm:items-center sm:justify-between">
+            <div class="flex items-center justify-between">
+                <a class="flex-none text-xl font-semibold text-primary-500 focus:outline-none focus:opacity-80"
+                    href="@Url.Action("Index", "Hospital", new { lang = CultureInfo.CurrentCulture.Name })"
+                    aria-label="Brand">
+                    @Localizer["Insurance"]
+                </a>
+                <div class="sm:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle relative flex size-7 items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+                        id="hs-navbar-example-collapse" aria-expanded="false" aria-controls="hs-navbar-example"
+                        aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-example">
+                        <heroicon name="Bars3" class="shrink-0 size-4 hs-collapse-open:hidden" />
+                        <heroicon name="XMark" class="shrink-0 hidden size-4 hs-collapse-open:block" />
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                </div>
+            </div>
+            <div id="hs-navbar-example"
+                class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 sm:block"
+                aria-labelledby="hs-navbar-example-collapse">
+                <div class="mt-5 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                    <a href="@Url.Action("Index", "Map", new { lang = CultureInfo.CurrentCulture.Name })"
+                        class="font-medium text-neutral-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500">
+                        @Localizer["Map"]
+                    </a>
+                    @await Html.PartialAsync("_LoginPartial")
+                    <button type="button"
+                        class="hs-dark-mode block rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 hs-dark-mode-active:hidden dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                        data-hs-theme-click-value="dark">
+                        <heroicon kind="Solid" name="Moon" class="shrink-0 size-4"/>
+                    </button>
+                    <button type="button"
+                        class="hs-dark-mode hidden rounded-full font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 hs-dark-mode-active:block dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                        data-hs-theme-click-value="light">
+                        <heroicon kind="Solid" name="Sun" class="shrink-0 size-4"/>
+                    </button>
+                    @await Html.PartialAsync("_LanguageSelect")
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto mt-5 lg:px-12" id="main-body">
+        @RenderBody()
+    </div>
+    <script>
+        var loginUrl = '@Url.Action("Login", "Account")';
+        var exportUrl = '@Url.Action("Export", "Hospital")';
+        var hospitalUrl = '@Url.Action("Index", "Hospital")';
+        var EditUrl = '@Url.Action("Edit", "Hospital")';
+        var DeleteUrl = '@Url.Action("Delete", "Hospital")';
+        var cityUrl = '@Url.Action("ListCities", "Hospital")';
+        var districtUrl = '@Url.Action("ListDistricts", "Hospital")';
+        var wardUrl = '@Url.Action("ListWards", "Hospital")';
+        var mapUrl = '@Url.Action("Index", "Map")';
+        var userRoleUrl = '@Url.Action("GetUserRoles", "Account")';
+        var deleteUrl = '@Url.Action("DeleteConfirm", "Hospital")';
+    </script>
+    <script src="~/lib/htmx/htmx.js"></script>
+    <script src="~/lib/preline/dist/preline.js"></script>
+    <script src="~/js/searchbox.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

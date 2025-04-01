@@ -1,0 +1,8 @@
+﻿@using System.Globalization
+<select id="languageSelect"
+        onchange="window.location.href='@Context.Request.Path?lang=' + this.value"
+        class="h-8 rounded-md border border-gray-300 p-1 text-sm dark:text-neutral-400 dark:bg-neutral-70">
+    <option value="">Select Language</option>
+    <option value="vi">VN</option>
+    <option value="en">EN</option>
+</select>

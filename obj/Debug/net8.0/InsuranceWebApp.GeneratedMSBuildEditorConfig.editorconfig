@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InsuranceWebApp
+build_property.RootNamespace = InsuranceWebApp
+build_property.ProjectDir = D:\Do an\InsuranceWebApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Do an\InsuranceWebApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Do an/InsuranceWebApp/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Account/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNYW5hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Account/VerifyEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/DeleteConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcRGVsZXRlQ29uZmlybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/UploadForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcVXBsb2FkRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_BeforeEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX0JlZm9yZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_CityList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX0NpdHlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_DistrictList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX0Rpc3RyaWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_HospitalList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX0hvc3BpdGFsTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_SearchList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX1NlYXJjaExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Hospital/_WardList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcX1dhcmRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Map/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/BadRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhZFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/_LanguageSelect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYW5ndWFnZVNlbGVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Do an/InsuranceWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

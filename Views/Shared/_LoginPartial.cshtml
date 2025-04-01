@@ -1,0 +1,28 @@
+﻿@using InsuranceWebApp.Data
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@inject IViewLocalizer Localizer
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <a id="manage"
+       class="font-medium text-neutral-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+       href="@Url.Action("Manage","Account")">
+        @UserManager.GetUserName(User)
+    </a>
+    <a href="@Url.Action("Logout","Account")"
+       class="font-medium text-neutral-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500">
+       @Localizer["Logout"]
+    </a>
+}
+else
+{
+    <a id="login"
+       class="font-medium text-neutral-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+       href="@Url.Action("Login","Account")">
+        @Localizer["Login"]
+    </a>
+}

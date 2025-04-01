@@ -1,0 +1,55 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", serif;
+}
+
+.btn {
+    @apply shrink-0 inline-flex h-12 min-h-[3rem] cursor-pointer select-none flex-wrap items-center justify-center gap-2 rounded-lg border border-transparent px-4 text-center text-sm;
+    @apply focus:ring-1 focus:outline-none disabled:opacity-50 disabled:pointer-events-none;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-600;
+}
+
+
+.btn-secondary {
+    @apply bg-secondary-300 text-black hover:bg-secondary-400 focus:ring-secondary-400;
+}
+
+
+.btn-neutral {
+    @apply bg-neutral-700 text-white hover:ring-neutral-800 focus:ring-neutral-800;
+}
+
+.input {
+    @apply w-full items-center rounded-md border border-gray-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-neutral-300 focus:border-transparent dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600;
+}
+
+.goto-box {
+    @apply block min-h-[38px] w-12 rounded-lg border border-gray-200 px-2.5 py-2 text-center text-sm disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none;
+    -moz-appearance: textfield;
+}
+
+.header {
+    @apply px-5 py-3 text-start text-sm font-bold uppercase dark:text-neutral-500;
+}
+
+
+.link-primary {
+    @apply text-primary-500 border border-transparent hover:text-primary-700 focus:outline-none;
+}
+
+.btn-outline-primary {
+    @apply border-primary-500 text-primary-500 border bg-white hover:border-primary-400 hover:text-primary-400 focus:outline-none focus:border-primary-400 focus:text-primary-400 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: initial !important;
+}
+

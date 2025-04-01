@@ -1,0 +1,24 @@
+﻿@using InsuranceWebApp.Helper
+@model IEnumerable<HospitalViewModel>
+@{
+    ViewData["Title"] = "Bản đồ";
+}
+
+
+<div id="map" class="w-100 h-[400px]"></div>
+<button class="@Css.BtnSecondary">
+    <heroicon class="size-4" />
+</button>
+<div class="text-gray-800 dark:text-neutral-200">Cơ sở y tế gần nhất</div>
+<ul id="location-list" class="mx-2 my-4 divide-y shadow-md sm:mx-0"></ul>
+
+
+
+
+
+
+
+
+
+<script src="~/lib/maplibre-gl/maplibre-gl.min.js" asp-append-version="true"></script>
+<script src="~/js/map.js" asp-append-version="true"></script>
