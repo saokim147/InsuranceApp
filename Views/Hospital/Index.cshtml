@@ -6,18 +6,19 @@
 @using System.Text.Json
 @inject IViewLocalizer Localizer
 @{
+
     ViewData["Title"] = Localizer["Title"];
 
 }
 
-<div>@Model.CurrentLanguage</div>
+
 <div class="container max-h-full rounded-t-md bg-neutral-100 p-5 dark:bg-neutral-700" id="hospital-table-container">
     <div class="mx-auto flex max-w-full flex-col gap-3 p-5 sm:flex-row sm:items-start sm:flex-wrap xl:mx-0">
         <div class="relative md:w-80">
 
             <search-box id="hospital-search" list-id="hospital-search-list" name="hospitalName"
-                get="@Url.Action("Search","Hospital",new { lang = Model.CurrentLanguage })" placeholder="Tìm kiếm Bệnh viện.."
-                include="[name='isBlackList']">
+                get="@Url.Action("Search","Hospital",new { lang = Model.CurrentLanguage })" 
+                placeholder="HospitalSearch" include="[name='isBlackList']">
                 <heroicon name="MagnifyingGlass" class="size-5 text-gray-500 dark:text-neutral-500" />
             </search-box>
 
@@ -26,63 +27,65 @@
             @Localizer["ExpandText"]
             <heroicon name="ChevronDown" class="size-5 text-gray-500 dark:text-neutral-500" />
         </button>
-        <button type="button" class="{@Css.BtnPrimary} px-16" id="search-btn"
-                hx-get="@Url.Action("Index", "Hospital")"
-                hx-trigger="click"
-                hx-target="#hospital-table"
-                hx-include="[name='hospitalName'], [name='cityName'], [name='districtName'], [name='wardName'],
+        <button type="button" class="{@Css.BtnPrimary} px-16" id="search-btn" hx-get="@Url.Action("Index", "Hospital",new {Lang=Model.CurrentLanguage})"
+            hx-trigger="click" hx-target="#hospital-table"
+            hx-include="[name='hospitalName'], [name='cityName'], [name='districtName'], [name='wardName'],
                             [name='isPublicHospital'], [name='inPatient'], [name='outPatient'],[name='dental'], [name='isBlackList']">
-                @Localizer["SearchText"]
+            @Localizer["SearchText"]
         </button>
 
         <div class="flex w-full rounded-md bg-white px-5 dark:bg-neutral-800" id="accordation" style="display:none">
             <div class="mt-5 flex w-full flex-col gap-5 lg:flex-row">
                 <div class="relative">
                     <label for="citySelect" class="text-sm dark:text-neutral-400">@Localizer["City"]</label>
-                    <search-box id="citySelect" name="cityName" list-id="city-search-list" get="@Url.Action("ListCities","Hospital")">
-                        <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
+                    <search-box id="citySelect" name="cityName" list-id="city-search-list"
+                                get="@Url.Action("ListCities","Hospital",new { lang = Model.CurrentLanguage })">
+                        <heroicon name="ChevronUpDown" kind="Solid"
+                            class="size-5 text-gray-500 dark:text-neutral-500" />
                     </search-box>
                 </div>
                 <div class="relative">
                     <label for="districtSelect" class="text-sm dark:text-neutral-400">@Localizer["District"]</label>
-                    <search-box id="districtSelect" name="districtName" list-id="district-search-list" get="@Url.Action("ListDistricts","Hospital")"  
-                        include="[name='cityName']">
-                        <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
+                    <search-box id="districtSelect" name="districtName" list-id="district-search-list"
+                                get="@Url.Action("ListDistricts","Hospital",new { lang = Model.CurrentLanguage })" include="[name='cityName']">
+                        <heroicon name="ChevronUpDown" kind="Solid"
+                            class="size-5 text-gray-500 dark:text-neutral-500" />
                     </search-box>
                 </div>
                 <div class="relative">
                     <label for="wardSelect" class="text-sm dark:text-neutral-400">@Localizer["Ward"]</label>
-                    <search-box id="wardSelect" name="wardName" list-id="ward-search-list" get="@Url.Action("ListWards","Hospital")"  
-                        include="[name='districtName']">
-                        <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
+                    <search-box id="wardSelect" name="wardName" list-id="ward-search-list"
+                                get="@Url.Action("ListWards","Hospital",new { lang = Model.CurrentLanguage })" include="[name='districtName']">
+                        <heroicon name="ChevronUpDown" kind="Solid"
+                            class="size-5 text-gray-500 dark:text-neutral-500" />
                     </search-box>
                 </div>
             </div>
             <!-- Checkbox Filters -->
             <div class="my-5 flex flex-wrap">
-                <div class="me-4 mt-5 flex items-center">
-                    <input type="checkbox" name="isPublicHospital" value="true" class="size-4 accent-primary-500"
-                        id="public-hospital-checkbox">
-                    <label for="public-hospital-checkbox"
-                        class="ms-2 text-sm text-gray-900 dark:text-neutral-200">@Localizer["Public"]</label>
+                <div class="me-4 mt-5 flex">
+                    <input type="checkbox" id="public-hospital-checkbox" name="isPublicHospital" value="true" class="size-4 accent-primary-500">
+                    <label for="public-hospital-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">
+                        @Localizer["IsPublicHospital"]
+                    </label>
                 </div>
                 <div class="me-4 mt-5 flex items-center">
-                    <input type="checkbox" name="inPatient" value="true" class="size-4 accent-primary-500"
-                        id="in-patient-checkbox">
-                    <label for="in-patient-checkbox"
-                        class="ms-2 text-sm text-gray-900 dark:text-neutral-200">@Localizer["InPatient"]</label>
+                    <input type="checkbox" id="in-patient-checkbox" name="inPatient" value="true" class="size-4 accent-primary-500">
+                    <label for="in-patient-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">
+                        @Localizer["InPatient"]
+                    </label>
                 </div>
                 <div class="me-4 mt-5 flex items-center">
-                    <input type="checkbox" name="outPatient" value="true" class="size-4 accent-primary-500"
-                        id="out-patient-checkbox">
-                    <label for="out-patient-checkbox"
-                        class="ms-2 text-sm text-gray-900 dark:text-neutral-200">@Localizer["OutPatient"]</label>
+                    <input type="checkbox" id="out-patient-checkbox" name="outPatient" value="true" class="size-4 accent-primary-500">
+                    <label for="out-patient-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">
+                        @Localizer["OutPatient"]
+                    </label>
                 </div>
                 <div class="me-4 mt-5 flex items-center">
-                    <input type="checkbox" name="dental" value="true" class="size-4 accent-primary-500"
-                        id="dental-checkbox">
-                    <label for="dental-checkbox"
-                        class="ms-2 text-sm text-gray-900 dark:text-neutral-200">@Localizer["Dental"]</label>
+                    <input type="checkbox" id="dental-checkbox" name="dental" value="true" class="size-4 accent-primary-500">
+                    <label for="dental-checkbox" class="ms-2 text-sm text-gray-900 dark:text-neutral-200">
+                        @Localizer["Dental"]
+                    </label>
                 </div>
             </div>
             <button class="btn btn-neutral mb-5" id="reset-btn">@Localizer["Reset"]</button>
@@ -94,7 +97,8 @@
             <label for="hospital-select"
                 class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">@Localizer["SelectHospitalList"]</label>
             <select name="isBlackList" hx-get="@Url.Action("Index", "Hospital", new { lang = Model.CurrentLanguage })"
-                hx-target="#hospital-table" id="hospital-select" hx-on:change="sessionStorage.clear()" class="@Css.Input">
+                hx-target="#hospital-table" id="hospital-select" hx-on:change="sessionStorage.clear()"
+                class="@Css.Input">
                 <option value="false">@Localizer["InsuranceCoverage"]</option>
                 <option value="true">@Localizer["NonInsuranceCoverage"]</option>
             </select>
@@ -102,15 +106,15 @@
         <div class="hs-dropdown relative mt-2 flex items-end gap-x-2 md:mt-0">
             @if (User?.Identity?.IsAuthenticated == true)
             {
-                <button class="btn btn-outline-primary flex items-center gap-2" aria-haspopup="false" aria-expanded="false"
-                    data-hs-overlay="#addFormContainer" hx-target="#addForm" hx-get="@Url.Action("Create", "Hospital")"
+                <button class="btn btn-outline-primary flex items-center gap-2" 
+                    aria-haspopup="false" aria-expanded="false"
+                    data-hs-overlay="#addFormContainer" 
                     aria-controls="links">
                     @Localizer["Add"]
                     <heroicon name="Plus" class="size-5 text-primary-600" />
                 </button>
                 <div class="hs-tooltip inline-block">
-                    <button id="delete-btn" type="button" 
-                        data-hs-overlay="#deleteConfirmed"
+                    <button id="delete-btn" type="button" data-hs-overlay="#deleteConfirmed"
                         class="hs-tooltip-toggle inline-flex items-center rounded-lg border border-blue-700 p-2.5 text-center text-sm font-medium text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500">
                         <heroicon name="Trash" class="size-5 text-blue-500" />
                     </button>
@@ -136,25 +140,14 @@
             <div class="hs-dropdown-menu opacity-0 z-10 absolute right-0 mt-2 hidden w-56 min-w-60 rounded-lg bg-white p-2 shadow-md transition-[opacity,margin] dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 hs-dropdown-open:opacity-100"
                 role="menu" aria-orientation="vertical">
                 <a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                    hx-include="[name='isBlackList']"
-                    hx-boost="true"
-                    hx-push-url="false"
-                    href="@Url.Action("Export", "Hospital", new { fileType = "pdf",lang=Model.CurrentLanguage})">
-                    PDF
-                </a>
-                <a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                    hx-include="[name='isBlackList']"
-                    hx-boost="true"
-                    hx-push-url="false"
-                    href="@Url.Action("Export", "Hospital", new { fileType = "excel",lang=Model.CurrentLanguage})">
+                    hx-include="[name='isBlackList'],[name='cityName']" hx-boost="true" hx-push-url="false"
+                    href="@Url.Action("Export", "Hospital", new { fileType = "excel", lang = Model.CurrentLanguage })">
                     Excel
                 </a>
                 <a class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-                   hx-include="[name='isBlackList']"
-                   hx-boost="true"
-                   hx-push-url="false"
-                   href="@Url.Action("Export", "Hospital", new { fileType = "csv", lang=Model.CurrentLanguage})">
-                   CSV
+                    hx-include="[name='isBlackList'],[name='cityName']" hx-boost="true" hx-push-url="false"
+                    href="@Url.Action("Export", "Hospital", new { fileType = "csv", lang = Model.CurrentLanguage })">
+                    CSV
                 </a>
             </div>
         </div>
@@ -166,6 +159,7 @@
     tabindex="-1" aria-labelledby="hs-notifications-label">
     <div id="addForm"
         class="opacity-0 m-3 mt-0 transition-all ease-out sm:max-w-2xl sm:w-full sm:mx-auto hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500">
+        @await Html.PartialAsync("Create", new CreateHospitalViewModel())
     </div>
 </div>
 
@@ -174,7 +168,7 @@
     tabindex="-1" aria-labelledby="hs-basic-modal-label">
     <div id="deleteConfirmModal"
         class="opacity-0 m-3 mt-0 transition-all ease-out sm:max-w-lg sm:w-full sm:mx-auto hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500">
-        @await Html.PartialAsync("DeleteConfirm");
+        @await Html.PartialAsync("DeleteConfirm")
     </div>
 </div>
 
@@ -188,32 +182,35 @@
 <script src="~/js/hospital.js" type="module" asp-append-version="true"></script>
 <script src="~/js/table.js" asp-append-version="true"></script>
 <script>
-    var page='@Model.CurrentLanguage';
-    document.addEventListener('DOMContentLoaded',()=>{
-        new AutoCompleteHandler('hospital-search','hospital-search-list');
-        new AutoCompleteHandler('citySelect','city-search-list');
-        new AutoCompleteHandler('districtSelect','district-search-list');
-        new AutoCompleteHandler('wardSelect','ward-search-list');
+    var page = '@Model.CurrentLanguage';
+    document.addEventListener('DOMContentLoaded', () => {
+        new AutoCompleteHandler('hospital-search', 'hospital-search-list');
+        new AutoCompleteHandler('citySelect', 'city-search-list');
+        new AutoCompleteHandler('districtSelect', 'district-search-list');
+        new AutoCompleteHandler('wardSelect', 'ward-search-list');
     });
-    document.addEventListener('change',function(e){
-        if(e.target.classList.contains('delete-checkbox')){
-            if(e.target.checked){
-                let id=e.target.id;
-                let selectedCheckbox=document.getElementById(id);
-                sessionStorage.setItem(id,selectedCheckbox.dataset.hospitalId);
-            }else{
-                let id=e.target.id;
+    document.addEventListener('change', (e) => {
+        if (e.target.classList.contains('delete-checkbox')) {
+            if (e.target.checked) {
+                let id = e.target.id;
+                let selectedCheckbox = document.getElementById(id);
+                if (selectedCheckbox) {
+                    sessionStorage.setItem(id, selectedCheckbox.dataset.hospitalId);
+                }
+            } else {
+                let id = e.target.id;
                 sessionStorage.removeItem(id);
             }
         }
     })
-    document.addEventListener('htmx:afterRequest',function(e){
-        restoreCheckedCheckbox();
-    })
-    document.getElementById('delete-btn').addEventListener('click',function(e){
-        let totalDeleted=document.getElementById('delete-count');
-        let items=getSessionIndexList();
-        totalDeleted.textContent=items.length;
-    })
+    document.addEventListener('htmx:afterRequest', (e) => restoreCheckedCheckbox());
+    const deleteBtn = document.getElementById('delete-btn');
+    if (deleteBtn) {
+        deleteBtn.addEventListener('click', (e) => {
+            let totalDeleted = document.getElementById('delete-count');
+            let items = getSessionIndexList();
+            totalDeleted.textContent = items.length;
+        })
+    }
 
 </script>

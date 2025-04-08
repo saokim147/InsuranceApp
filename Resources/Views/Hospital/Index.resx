@@ -126,17 +126,11 @@
   <data name="Delete" xml:space="preserve">
     <value>Xoá dữ liệu</value>
   </data>
-  <data name="Dental " xml:space="preserve">
-    <value>Nha Khoa</value>
-  </data>
   <data name="District" xml:space="preserve">
     <value>Quận</value>
   </data>
   <data name="ExpandText" xml:space="preserve">
     <value>Mở rộng</value>
-  </data>
-  <data name="ExportFile" xml:space="preserve">
-    <value>Xuất file</value>
   </data>
   <data name="HospitalSearch" xml:space="preserve">
     <value>Cơ sở y tế...</value>
@@ -170,5 +164,44 @@
   </data>
   <data name="Ward" xml:space="preserve">
     <value>Phường</value>
+  </data>
+  <data name="Dental" xml:space="preserve">
+    <value>Nha khoa</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Xuất </value>
+  </data>
+  <data name="BillingTime" xml:space="preserve">
+    <value>Thời gian hoạt động</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="IsPublicHospital" xml:space="preserve">
+    <value>Bệnh viện công</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Tên bệnh viện</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="InsuranceAndDirectBilling" xml:space="preserve">
+    <value>Bảo hiểm và trả tiền viện phí trực tiếp</value>
+  </data>
+  <data name="IsBlackList" xml:space="preserve">
+    <value>Nằm trong danh sách đen?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Trang chủ</value>
   </data>
 </root>

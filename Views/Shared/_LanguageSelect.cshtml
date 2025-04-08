@@ -1,8 +1,81 @@
 ﻿@using System.Globalization
-<select id="languageSelect"
-        onchange="window.location.href='@Context.Request.Path?lang=' + this.value"
-        class="h-8 rounded-md border border-gray-300 p-1 text-sm dark:text-neutral-400 dark:bg-neutral-70">
-    <option value="">Select Language</option>
-    <option value="vi">VN</option>
-    <option value="en">EN</option>
-</select>
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> stringLocalizer
+@{
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
+}
+<div class="hs-dropdown relative inline-block">
+    <button id="language-toggle-btn" class="hs-dropdown-toggle rounded-md border border-gray-300 bg-white px-2 py-1 text-sm font-medium shadow-sm hover:bg-gray-50 dark:text-neutral-200 dark:bg-neutral-700">
+        <div data-language-select class="block px-4 py-2 text-sm hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700">
+            <div class="flex items-center">
+                @if(currentLanguage=="vi")
+                {
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                        <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#c93728"></rect>
+                        <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                        <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                        <path fill="#ff5" d="M18.008 16.366L21.257 14.006 17.241 14.006 16 10.186 14.759 14.006 10.743 14.006 13.992 16.366 12.751 20.186 16 17.825 19.249 20.186 18.008 16.366z"></path>
+                    </svg>
+                    <span class="ml-2">Tiếng Việt</span>
+                }else
+                {
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                        <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                        <path d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z" fill="#a62842"></path>
+                        <path d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z" fill="#a62842"></path>
+                        <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                        <path fill="#a62842" d="M2 15.077H31V16.923H2z"></path>
+                        <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                        <path d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z" fill="#a62842"></path>
+                        <path d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z" fill="#a62842"></path>
+                        <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                        <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                        <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                        <path fill="#fff" d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z"></path>
+                    </svg>
+                    <span class="ml-2">English</span>
+                }
+             
+            </div>
+        </div>
+    </button>
+    <div class="hs-dropdown-menu opacity-0 z-10 absolute right-0 mt-1 hidden w-40 rounded-lg bg-white p-2 shadow-md transition-[opacity,margin] dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 hs-dropdown-open:opacity-100" role="menu" aria-orientation="vertical">
+        <!-- English Option -->
+        <a href="#" onclick="changeLanguage('en')" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                    <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                    <path d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z" fill="#a62842"></path>
+                    <path d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z" fill="#a62842"></path>
+                    <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                    <path fill="#a62842" d="M2 15.077H31V16.923H2z"></path>
+                    <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                    <path d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z" fill="#a62842"></path>
+                    <path d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z" fill="#a62842"></path>
+                    <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                    <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                    <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                    <path fill="#fff" d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z"></path>
+                </svg>
+                <span class="ml-2">English</span>
+            </div>
+        </a>
+        <a href="#" onclick="changeLanguage('vi')" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32">
+                    <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#c93728"></rect>
+                    <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                    <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                    <path fill="#ff5" d="M18.008 16.366L21.257 14.006 17.241 14.006 16 10.186 14.759 14.006 10.743 14.006 13.992 16.366 12.751 20.186 16 17.825 19.249 20.186 18.008 16.366z"></path>
+                </svg>
+                <span class="ml-2">Tiếng Việt</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    function changeLanguage(lang) {
+        window.location.href = '@Context.Request.Path?lang=' + lang;
+    }
+</script>

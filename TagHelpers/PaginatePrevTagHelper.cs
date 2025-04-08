@@ -16,9 +16,9 @@ namespace InsuranceWebApp.TagHelpers
             output.Attributes.SetAttribute("hx-get", Url);
             output.Attributes.SetAttribute("hx-target", Target);
             output.Attributes.SetAttribute("type", "button");
-            if (Disabled)
+            if (!Disabled)
             {
-                output.Attributes.SetAttribute("disabled", "disabled");
+                output.Attributes.SetAttribute("disabled", null);
             }
             output.Attributes.SetAttribute("class", "flex min-h-[38px] min-w-[38px] items-center justify-center rounded-lg px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10");
             var content = @"<span class=""sr-only"">Previous</span>

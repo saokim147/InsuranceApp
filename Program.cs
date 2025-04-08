@@ -45,9 +45,7 @@ builder.Services.AddSingleton(
 builder.Services.AddScoped<IMapService, MapService>();
 builder.Services.AddScoped<IHospitalRepository, HospitalRepository>();
 builder.Services.AddScoped<ExportService>();
-//builder.Services.AddScoped<IFileProcessor, CsvFileProcessor>();
-/*builder.Services.AddScoped<IFileProcessor, ExcelFileProcessor>();
-builder.Services.AddScoped<FileProcessorFactory>();*/
+
 
 
 var supportedCultures = new[] { "vi", "en" };

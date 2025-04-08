@@ -117,41 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Title" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="HospitalSearch" xml:space="preserve">
-    <value>Search hospital...</value>
-  </data>
-  <data name="ExpandText" xml:space="preserve">
-    <value>Expand</value>
-  </data>
-  <data name="SearchText" xml:space="preserve">
-    <value>Search</value>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="City" xml:space="preserve">
     <value>City</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="District" xml:space="preserve">
     <value>District</value>
   </data>
-  <data name="Ward" xml:space="preserve">
-    <value>Ward</value>
+  <data name="ExpandText" xml:space="preserve">
+    <value>Expand</value>
   </data>
-  <data name="Public" xml:space="preserve">
-    <value>Public Hospital</value>
+  <data name="HospitalSearch" xml:space="preserve">
+    <value>Search hospital...</value>
+  </data>
+  <data name="HospitalType" xml:space="preserve">
+    <value>Hospital Type</value>
   </data>
   <data name="InPatient" xml:space="preserve">
     <value>Inpatient</value>
-  </data>
-  <data name="OutPatient" xml:space="preserve">
-    <value>Outpatient</value>
-  </data>
-  <data name="Dental" xml:space="preserve">
-    <value>Dental</value>
-  </data>
-  <data name="SelectHospitalList" xml:space="preserve">
-    <value>Select Hospital List</value>
   </data>
   <data name="InsuranceCoverage" xml:space="preserve">
     <value>Insurance Coverage</value>
@@ -159,41 +147,38 @@
   <data name="NonInsuranceCoverage" xml:space="preserve">
     <value>Non-Insurance Coverage</value>
   </data>
-  <data name="Add" xml:space="preserve">
-    <value>Add</value>
+  <data name="OutPatient" xml:space="preserve">
+    <value>Outpatient</value>
   </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
+  <data name="Public" xml:space="preserve">
+    <value>Public Hospital</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SelectHospitalList" xml:space="preserve">
+    <value>Select Hospital List</value>
+  </data>
+  <data name="Ward" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="Dental" xml:space="preserve">
+    <value>Dental</value>
   </data>
   <data name="Export" xml:space="preserve">
     <value>Export</value>
   </data>
-  <data name="HospitalName" xml:space="preserve">
-    <value>Hospital Name</value>
-  </data>
-  <data name="HospitalAddress" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="PhoneNumber" xml:space="preserve">
-    <value>Phone Number</value>
-  </data>
   <data name="BillingTime" xml:space="preserve">
     <value>Operating Hours</value>
-  </data>
-  <data name="InsuranceAndDirectBilling" xml:space="preserve">
-    <value>Insurance and Direct Billing</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Note</value>
   </data>
-  <data name="ServicesAndTypes" xml:space="preserve">
-    <value>Services and Types</value>
-  </data>
   <data name="IsPublicHospital" xml:space="preserve">
     <value>Public Hospital</value>
-  </data>
-  <data name="IsBlackList" xml:space="preserve">
-    <value>Blacklisted?</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
@@ -203,5 +188,20 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit Hospital</value>
+  </data>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Hospital Name</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="InsuranceAndDirectBilling" xml:space="preserve">
+    <value>Insurance and Direct Billing</value>
+  </data>
+  <data name="IsBlackList" xml:space="preserve">
+    <value>Blacklisted?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Home</value>
   </data>
 </root>

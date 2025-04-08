@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.ComponentModel;
+using System.Data;
 using InsuranceWebApp.Data;
 using InsuranceWebApp.Helper;
 using InsuranceWebApp.Models;
@@ -10,6 +11,7 @@ namespace InsuranceWebApp.Repository
     public class HospitalRepository : IHospitalRepository
     {
         private readonly HospitalDbContext _context;
+
         public HospitalRepository(HospitalDbContext context)
         {
             _context = context;
@@ -19,44 +21,97 @@ namespace InsuranceWebApp.Repository
             await _context.Hospitals.AddAsync(hospital);
             await _context.SaveChangesAsync();
         }
-        private static DataTable GetHospitalDataTable(List<Hospital> hospitals)
+        private static DataTable GetCoordinateTempTable(List<MapApiResponseDTO> mapApiResponseDTOs)
         {
-            var dataTable = new DataTable();
-            dataTable.Columns.Add(nameof(Hospital.HospitalName), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.HospitalAddress), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.BillingTime), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.OutPatient), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.InPatient), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.Dental), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.IsPublicHospital), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.InsuranceAndDirectBilling), typeof(string));
-            dataTable.Columns.Add(nameof(Hospital.Note), typeof(string));
-            foreach (var hospital in hospitals)
+            var tempTable = new DataTable();
+            tempTable.Columns.Add(nameof(MapApiResponseDTO.lon), typeof(double));
+            tempTable.Columns.Add(nameof(MapApiResponseDTO.lat), typeof(double));
+            foreach (var mapApiResponseDTO in mapApiResponseDTOs)
             {
-                dataTable.Rows.Add(hospital.HospitalName, hospital.HospitalAddress, hospital.BillingTime, hospital.OutPatient, hospital.InPatient, hospital.Dental, hospital.IsPublicHospital, hospital.InsuranceAndDirectBilling, hospital.Note);
+                tempTable.Rows.Add(
+                    mapApiResponseDTO.lat,
+                    mapApiResponseDTO.lon
+                );
             }
-            return dataTable;
+            return tempTable;
         }
-        public async Task BulkInsertAsync(List<Hospital> hospitals)
+
+        private static async Task<bool> BulkInsertAsync<T>(DbContext context, string tableName, IList<T> list)
         {
-            var dataTable = GetHospitalDataTable(hospitals);
-            using var bulkCopy = new SqlBulkCopy(_context.Database.GetDbConnection().ConnectionString, SqlBulkCopyOptions.TableLock);
-            bulkCopy.DestinationTableName = "Hospitals";
-            await bulkCopy.WriteToServerAsync(dataTable);
+            try
+            {
+                if (list == null || list.Count == 0) return true;
+                if (context.Database.GetDbConnection().State != ConnectionState.Open)
+                {
+                    await context.Database.OpenConnectionAsync();
+                }
+                using var bulkCopy = new SqlBulkCopy(context.Database.GetDbConnection() as SqlConnection);
+                bulkCopy.BatchSize = list.Count;
+                bulkCopy.DestinationTableName = tableName;
+
+                var table = new DataTable();
+                var props = TypeDescriptor.GetProperties(typeof(T))
+                    .Cast<PropertyDescriptor>()
+                    .Where(propertyInfo => propertyInfo.PropertyType.Namespace.Equals("System"))
+                    .ToArray();
+
+                foreach (var propertyInfo in props)
+                {
+                    bulkCopy.ColumnMappings.Add(propertyInfo.Name, propertyInfo.Name);
+                    table.Columns.Add(propertyInfo.Name, Nullable.GetUnderlyingType(propertyInfo.PropertyType) ?? propertyInfo.PropertyType);
+                }
+
+                var values = new object[props.Length];
+                foreach (var item in list)
+                {
+                    for (var i = 0; i < values.Length; i++)
+                    {
+                        values[i] = props[i].GetValue(item);
+                    }
+                    table.Rows.Add(values);
+                }
+
+                await bulkCopy.WriteToServerAsync(table);
+                if (context.Database.GetDbConnection().State != ConnectionState.Closed)
+                {
+                    await context.Database.CloseConnectionAsync();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                if (context.Database.GetDbConnection().State != ConnectionState.Closed)
+                {
+                    await context.Database.CloseConnectionAsync();
+                }
+                return false;
+            }
         }
-        // ...
+
+        public async Task BulkInsertHospitalAsync(List<Hospital> hospitals)
+        {
+            await BulkInsertAsync(_context, "dbo.Hospitals", hospitals);
+        }
+
 
         public async Task<List<HospitalDTO>> GetHospitalListAsync(string lang) => await _context.Hospitals.Select(h => h.ToHospitalDTO(lang)).ToListAsync();
         public async Task<Hospital> GetHospitalByIdAsync(int id)
         {
             var hospital = await _context.Hospitals.FindAsync(id);
             return hospital ?? new Hospital();
-            }
-        public async Task<List<FileResponseDTO>> GetFileResponseDTOAsync(bool isBlackList=false,string lang="vi")
+        }
+        public async Task<List<FileResponseDTO>> GetFileResponseDTOAsync(bool isBlackList = false, string lang = "vi", string cityName = "")
         {
             var hospitals = _context.Hospitals.AsQueryable();
+            if (!string.IsNullOrEmpty(cityName))
+            {
+                hospitals = hospitals.Include(h => h.City)
+                                     .Where(h => h.City != null &&
+                                                 EF.Functions.Collate(h.City.CityName, "SQL_LATIN1_GENERAL_CP1_CI_AI")
+                                                 .Contains(cityName));
+            }
             hospitals = hospitals.Where(h => h.IsBlackList == isBlackList);
-            
+
             return await hospitals
                 .Include(h => h.City)
                 .Include(h => h.District)
@@ -90,7 +145,7 @@ namespace InsuranceWebApp.Repository
         {
             var hospitals = _context.Hospitals.AsQueryable();
             var hospitalNameList = new List<string>();
-            if(!string.IsNullOrEmpty(hospitalCreterias.HospitalName))
+            if (!string.IsNullOrEmpty(hospitalCreterias.HospitalName))
             {
                 hospitals = hospitals.Where(h => EF.Functions.Collate(h.HospitalName, "SQL_LATIN1_GENERAL_CP1_CI_AI")
                                 .Contains(hospitalCreterias.HospitalName));
@@ -161,7 +216,7 @@ namespace InsuranceWebApp.Repository
             {
                 hospitals = hospitals.Include(h => h.City)
                                      .Where(h => h.City != null &&
-                                                 EF.Functions.Collate(h.City.CityName , "SQL_LATIN1_GENERAL_CP1_CI_AI")
+                                                 EF.Functions.Collate(h.City.CityName, "SQL_LATIN1_GENERAL_CP1_CI_AI")
                                                  .Contains(hospitalCreterias.CityName));
             }
             if (!string.IsNullOrEmpty(hospitalCreterias.DistrictName))
@@ -303,15 +358,15 @@ namespace InsuranceWebApp.Repository
             }
 
             var city = await _context.Cities
-                .Where(c => c.CityId == cityId.Value) 
-                .Select(c => c.ToCityDTO(lang)) 
+                .Where(c => c.CityId == cityId.Value)
+                .Select(c => c.ToCityDTO(lang))
                 .FirstOrDefaultAsync();
             return city;
         }
 
-        public async Task<DistrictDTO> GetDistrictByIdAsync(int ?districtId,string lang)
+        public async Task<DistrictDTO> GetDistrictByIdAsync(int? districtId, string lang)
         {
-            if(!districtId.HasValue)
+            if (!districtId.HasValue)
             {
                 return null;
             }
@@ -321,9 +376,9 @@ namespace InsuranceWebApp.Repository
                 .FirstOrDefaultAsync();
             return district;
         }
-        public async Task<WardDTO> GetWardByIdAsync(int ?wardId,string lang)
+        public async Task<WardDTO> GetWardByIdAsync(int? wardId, string lang)
         {
-            if(!wardId.HasValue)
+            if (!wardId.HasValue)
             {
                 return null;
             }
@@ -333,5 +388,6 @@ namespace InsuranceWebApp.Repository
                 .FirstOrDefaultAsync();
             return ward;
         }
+
     }
 }

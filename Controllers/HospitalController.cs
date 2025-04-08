@@ -137,17 +137,6 @@ namespace InsuranceWebApp.Controllers
 
 
         [Authorize]
-        public IActionResult Create()
-        {
-            if (Request.IsHtmx())
-            {
-                Response.Headers.Append("Vary", "HX-Request");
-                return PartialView("Create");
-            }
-            return View("Create");
-        }
-
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateHospitalViewModel model)
@@ -242,7 +231,7 @@ namespace InsuranceWebApp.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Edit(int id, string lang = "vi",int currentPage=1)
+        public async Task<IActionResult> Edit(int id, string lang = "vi", int currentPage = 1)
         {
             var hospital = await _hospitalRepository.GetHospitalByIdAsync(id);
             if (hospital == null)
@@ -252,11 +241,13 @@ namespace InsuranceWebApp.Controllers
             var city = await _hospitalRepository.GetCityByIdAsync(hospital.CityId, lang);
             var district = await _hospitalRepository.GetDistrictByIdAsync(hospital.DistrictId, lang);
             var ward = await _hospitalRepository.GetWardByIdAsync(hospital.WardId, lang);
-            var editViewModel = new EditHospitalViewModel { };
-            if(city!=null && district!=null && ward !=null)
-            {
-                editViewModel = hospital.ToEditHospitalViewModel(lang, city.CityName, district.DistrictName, ward.WardName, currentPage);
-            }
+            var editViewModel = hospital.ToEditHospitalViewModel(
+                    lang,
+                    city?.CityName ?? string.Empty,
+                    district?.DistrictName ?? string.Empty,
+                    ward?.WardName ?? string.Empty,
+                    currentPage
+            );
             if (Request.IsHtmx())
             {
                 Response.Headers.Append("Vary", "HX-Request");
@@ -277,20 +268,7 @@ namespace InsuranceWebApp.Controllers
             var hospital = await _hospitalRepository.GetHospitalByIdAsync(model.HospitalId);
             if (hospital != null)
             {
-                hospital.HospitalAddress = model.HospitalAddress;
-                hospital.HospitalName = model.HospitalName;
-                hospital.PhoneNumber = model.PhoneNumber;
-                hospital.IsPublicHospital = model.IsPublicHospital;
-                hospital.InPatient = model.InPatient;
-                hospital.Dental = model.Dental;
-                hospital.InsuranceAndDirectBilling = model.InsuranceAndDirectBilling;
-                hospital.OutPatient = model.OutPatient;
-                hospital.BillingTime = model.BillingTime;
-                hospital.Note = model.Note;
-                hospital.IsBlackList = model.IsBlackList;
-                hospital.CityId = model.CityId;
-                hospital.DistrictId = model.DistrictId;
-                hospital.WardId = model.WardId;
+                UpdateHospitalFromEditModel(hospital, model);
                 await _hospitalRepository.UpdateAsync();
                 var pagingCreterias = new PagingCriteria
                 {
@@ -308,7 +286,7 @@ namespace InsuranceWebApp.Controllers
                     Response.Headers.Append("Vary", "HX-Request");
                     return PartialView("_HospitalList", hospitalPagedList.ToInsuranceViewModel());
                 }
-                return View("_Layout");
+                return View("Edit");
             }
             Response.Htmx(h =>
                 h.WithTrigger(EventMessage.FAILED_UPDATE_MSG)
@@ -321,7 +299,7 @@ namespace InsuranceWebApp.Controllers
         [Authorize]
         public async Task<IActionResult> Delete(DeleteViewModel model)
         {
-            var totalRecordDeleted = await _hospitalRepository.BulkDeleteAsync(model.DeletedIds);
+            await _hospitalRepository.BulkDeleteAsync(model.DeletedIds);
             var hospitalCriterias = new HospitalFindCriterias { };
             var pagingCriteria = new PagingCriteria { };
             var hospitalPagedList = await _hospitalRepository.FindAsync(pagingCriteria, hospitalCriterias, HospitalSortBy.Default);
@@ -334,23 +312,41 @@ namespace InsuranceWebApp.Controllers
             Response.Headers.Append("Vary", "HX-Request");
             return PartialView();
         }
-        public async Task<IActionResult> Export(string fileType,bool isBlackList=false,string lang="vi")
+        public async Task<IActionResult> Export(string fileType, bool isBlackList = false, string lang = "vi", string cityName = "")
         {
-            var data = await _hospitalRepository.GetFileResponseDTOAsync(isBlackList, lang);
+            var data = await _hospitalRepository.GetFileResponseDTOAsync(isBlackList, lang, cityName);
             Response.Htmx(h =>
-                        h.Redirect(Url.Action("Export", new { fileType, isBlackList, lang }))
+                h.Redirect(Url.Action("Export", new { fileType, isBlackList, lang,cityName }))
             );
+            var id = DateTime.Now.ToString();
             switch (fileType.ToLower())
             {
                 case "csv":
                     var csvStream = await _exportService.ExportToCSV(data);
-                    return File(csvStream,HttpContentTypeFormat.CSV, "hospitals.csv");
+                    return File(csvStream, HttpContentTypeFormat.CSV, $"hospitals-{id}.csv");
                 case "excel":
                     var excelStream = _exportService.ExportToExcelWithClosedXML(data);
-                    return File(excelStream,HttpContentTypeFormat.EXCEL, "hospitals.xlsx");
+                    return File(excelStream, HttpContentTypeFormat.EXCEL, $"hospitals-{id}.xlsx");
                 default:
                     return BadRequest("Unsupported file type");
             }
+        }
+        private static void UpdateHospitalFromEditModel(Hospital hospital, EditHospitalViewModel model)
+        {
+            hospital.HospitalAddress = model.HospitalAddress;
+            hospital.HospitalName = model.HospitalName;
+            hospital.PhoneNumber = model.PhoneNumber;
+            hospital.IsPublicHospital = model.IsPublicHospital;
+            hospital.InPatient = model.InPatient;
+            hospital.Dental = model.Dental;
+            hospital.InsuranceAndDirectBilling = model.InsuranceAndDirectBilling;
+            hospital.OutPatient = model.OutPatient;
+            hospital.BillingTime = model.BillingTime;
+            hospital.Note = model.Note;
+            hospital.IsBlackList = model.IsBlackList;
+            hospital.CityId = model.CityId;
+            hospital.DistrictId = model.DistrictId;
+            hospital.WardId = model.WardId;
         }
     }
 }

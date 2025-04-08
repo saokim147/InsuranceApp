@@ -231,22 +231,22 @@ namespace InsuranceWebApp.Helper
             if (lang == "vi")
             {
                 return new HospitalDTO
-                (
-                    hospital.HospitalName,
-                    hospital.HospitalAddress,
-                    hospital.Latitude ?? 0,
-                    hospital.Longitude ?? 0
-                );
+                {
+                   HospitalName= hospital.HospitalName,
+                   HospitalAddress= hospital.HospitalAddress,
+                   Latitude= hospital.Latitude ?? 0,
+                   Longitude = hospital.Longitude ?? 0
+                };
             }
             else
             {
                 return new HospitalDTO
-                (
-                    hospital.HospitalNameEn ?? string.Empty,
-                    hospital.HospitalAddressEn ?? string.Empty,
-                    hospital.Latitude ?? 0,
-                    hospital.Longitude ?? 0
-                );
+                {
+                    HospitalName = hospital.HospitalNameEn ?? string.Empty,
+                    HospitalAddress= hospital.HospitalAddressEn ?? string.Empty,
+                    Latitude = hospital.Latitude ?? 0,
+                    Longitude = hospital.Longitude ?? 0
+                };
             }
 
         }

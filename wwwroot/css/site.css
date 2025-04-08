@@ -42,14 +42,15 @@ body {
 
 
 .link-primary {
-    @apply text-primary-500 border border-transparent hover:text-primary-700 focus:outline-none;
+    @apply border border-transparent text-primary-500 hover:text-primary-700 focus:outline-none;
 }
 
 .btn-outline-primary {
-    @apply border-primary-500 text-primary-500 border bg-white hover:border-primary-400 hover:text-primary-400 focus:outline-none focus:border-primary-400 focus:text-primary-400 disabled:opacity-50 disabled:pointer-events-none;
+    @apply border border-primary-500 bg-white text-primary-500 hover:border-primary-400 hover:text-primary-400 focus:outline-none focus:border-primary-400 focus:text-primary-400 disabled:opacity-50 disabled:pointer-events-none;
 }
 
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
     -webkit-appearance: initial !important;
 }
+
 

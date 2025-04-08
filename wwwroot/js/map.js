@@ -5,7 +5,7 @@ function createLocationCard(item) {
   return `<li class="bg-white p-2 shadow text-gray-800 dark:text-neutral-200 dark:bg-neutral-800">
                 <div class="flex flex-col text-sm space-y-2">
                     <div><strong>Cơ sở y tế:</strong> ${item.hospitalName}</div>
-                    <div class="border-b-2 border-neutral-200"><strong>Địa chỉ:</strong> ${item.hospitalAddress}</div>
+                    <div class=" border-neutral-200"><strong>Địa chỉ:</strong> ${item.hospitalAddress}</div>
                 </div>
             </li>`;
 }
@@ -22,9 +22,9 @@ async function fetchNearByLocation(position, locationContainer) {
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.json();
-    if (Array.isArray(data)) {
-      locationContainer.innerHTML = data.map(createLocationCard).join("");
-      return data;
+    if (Array.isArray(data.hospitals)) {
+      locationContainer.innerHTML = data.hospitals.map(createLocationCard).join("");
+      return data.hospitals;
     } else {
       console.log("No nearby locations found.");
       return [];
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const locationContainer = document.getElementById("location-list");
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://localhost:7262/static/map/style.json",
+      style: "https://192.168.1.2:7262/static/map/style.json",
     center: defaultLocation,
     zoom: 14,
   });
@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   map.addControl(geolocateControl);
 
   map.on("load", async () => {
+    geolocateControl.trigger();
     map.fitBounds([
       [102.0409, 7.730748],
       [111.6685, 23.47731],
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const userLocation = position.coords;
       map.flyTo({
         center: [userLocation.longitude, userLocation.latitude],
-        zoom: 18,
+        zoom: 20,
         essential: true,
       });
       jsonLocationList = await fetchNearByLocation(

@@ -1,127 +1,128 @@
 ﻿@using InsuranceWebApp.Helper
 @model CreateHospitalViewModel
 @using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@using System.Globalization
+@inject IStringLocalizer<SharedResource> stringLocalizer
 @inject IViewLocalizer Localizer
+
 @{
-  ViewData["Title"] = Localizer["Add"];
+    ViewData["Title"] = Localizer["Add"];
+    var currentLanguage = CultureInfo.CurrentCulture.Name;
 }
 
 <div class="relative max-w-2xl rounded-md border border-neutral-200 bg-white px-4 py-8 dark:bg-neutral-800 lg:mx-auto lg:py-16" id="create-form">
   <div class="p-4 sm:p-7">
-    <h2 class="mb-4 text-2xl font-bold text-gray-800 dark:text-neutral-200">@Localizer["Add"] @Localizer["HospitalName"]</h2>
+    <h2 class="mb-4 text-2xl font-bold text-gray-800 dark:text-neutral-200">@Localizer["AddHospital"]</h2>
     <form asp-action="Create" asp-controller="Hospital" hx-boost="true" method="post" hx-target="#hospital-table" hx-push-url="false"
       hx-swap="innerHTML">
       @Html.AntiForgeryToken()
       <div asp-validation-summary="All" class="text-red-500"></div>
       <div class="mb-4 grid gap-4 sm:grid-cols-2">
-        
         <div class="relative">
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" for="create-citySelect">
-            @Localizer["City"]
+                        @stringLocalizer["City"]
           </label>
           <search-box asp-for="CityId" id="create-citySelect" name="cityName" list-id="create-city-list"
-             min="3" get="@Url.Action("ListCities","Hospital")">
+             min="3" get="@Url.Action("ListCities","Hospital",new {lang=currentLanguage})">
             <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
           </search-box>
           <span asp-validation-for="CityId" class="text-sm text-red-500"></span>
         </div>
-        
         <div class="relative">
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" for="create-districtSelect">
-            @Localizer["District"]
+                        @stringLocalizer["District"]
           </label>
           <search-box asp-for="DistrictId" id="create-districtSelect" name="districtName"
-            list-id="create-district-list" min="3" get="@Url.Action("ListDistricts","Hospital")"
+            list-id="create-district-list" min="3" get="@Url.Action("ListDistricts","Hospital",new {lang=currentLanguage})"
             include="[name='cityName']#create-citySelect">
             <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
           </search-box>
         </div>
-
         <div class="relative">
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" for="create-wardSelect">
-            @Localizer["Ward"]
+                        @stringLocalizer["Ward"]
           </label>
           <search-box asp-for="WardId" id="create-wardSelect" name="wardName" list-id="create-ward-list"
-            min="3" get="@Url.Action("ListWards","Hospital")"  include="[name='districtName']#create-districtSelect">
+            min="3" get="@Url.Action("ListWards","Hospital",new {lang=currentLanguage})"  include="[name='districtName']#create-districtSelect">
             <heroicon name="ChevronUpDown" kind="Solid" class="size-5 text-gray-500 dark:text-neutral-500" />
           </search-box>
         </div>
         <div class="sm:col-span-2">
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" asp-for="HospitalName">
-            @Localizer["HospitalName"]
+                        @stringLocalizer["HospitalName"]
           </label>
           <input class="input w-full" type="text" id="HospitalName" asp-for="HospitalName">
           <span asp-validation-for="HospitalName" class="text-sm text-red-500"></span>
         </div>
         <div>
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" asp-for="HospitalAddress">
-            @Localizer["HospitalAddress"]
+                        @stringLocalizer["HospitalAddress"]
           </label>
           <input class="input w-full" type="text" id="HospitalAddress" asp-for="HospitalAddress">
           <span asp-validation-for="HospitalAddress" class="text-sm text-red-500"></span>
         </div>
         <div>
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" asp-for="PhoneNumber">
-            @Localizer["PhoneNumber"]
+                        @stringLocalizer["PhoneNumber"]
           </label>
           <input class="input w-full" type="text" id="PhoneNumber" asp-for="PhoneNumber">
         </div>
         <div>
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" asp-for="BillingTime">
-            @Localizer["BillingTime"]
+                        @stringLocalizer["BillingTime"]
           </label>
           <input class="input w-full" type="text" id="BillingTime" asp-for="BillingTime">
         </div>
         <div>
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200"
             asp-for="InsuranceAndDirectBilling">
-            @Localizer["InsuranceAndDirectBilling"]
+                        @stringLocalizer["InsuranceAndDirectBilling"]
           </label>
           <input class="input w-full" type="text" id="InsuranceAndDirectBilling" asp-for="InsuranceAndDirectBilling">
         </div>
         <div class="sm:col-span-2">
           <label class="mb-2 block text-sm font-medium text-gray-800 dark:text-neutral-200" asp-for="Note">
-            @Localizer["Note"]
+                        @stringLocalizer["Note"]
           </label>
           <textarea rows="8" class="input w-full" id="Note" asp-for="Note"></textarea>
         </div>
       </div>
-      <h3 class="mb-2 text-lg font-medium text-gray-800 dark:text-neutral-200">@Localizer["ServicesAndTypes"]</h3>
+      <h3 class="mb-2 text-lg font-medium text-gray-800 dark:text-neutral-200">@stringLocalizer["ServicesAndTypes"]</h3>
       <div class="my-2 flex flex-wrap">
         <div class="me-4 mt-5 flex items-center">
           <input type="checkbox" class="h-4 w-4 accent-primary-500" asp-for="IsPublicHospital" value="true">
-          <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@Localizer["IsPublicHospital"]</label>
+                    <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@stringLocalizer["PublicHospital"]</label>
         </div>
 
         <div class="me-4 mt-5 flex items-center">
           <input type="checkbox" class="h-4 w-4 accent-primary-500" asp-for="InPatient" value="true">
-          <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@Localizer["InPatient"]</label>
+                    <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@stringLocalizer["InPatient"]</label>
         </div>
 
         <div class="me-4 mt-5 flex items-center">
           <input type="checkbox" class="h-4 w-4 accent-primary-500" asp-for="OutPatient" value="true">
-          <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@Localizer["OutPatient"]</label>
+                    <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@stringLocalizer["OutPatient"]</label>
         </div>
 
         <div class="me-4 mt-5 flex items-center">
           <input type="checkbox" class="h-4 w-4 accent-primary-500" asp-for="Dental" value="true">
-          <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@Localizer["Dental"]</label>
+                    <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@stringLocalizer["Dental"]</label>
         </div>
 
         <div class="me-4 mt-5 flex items-center">
           <input type="checkbox" class="h-4 w-4 accent-primary-500" asp-for="IsBlackList" value="true">
-          <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@Localizer["IsBlackList"]</label>
+                    <label class="ms-2 text-sm text-gray-900 dark:text-neutral-400">@stringLocalizer["IsBlackList"]</label>
         </div>
       </div>
       <div class="mt-5 flex items-center space-x-4">
-        <button type="submit" class="btn btn-primary" id="save-btn">@Localizer["Save"]</button>
-        <button type="button" class="btn btn-outline-primary" id="add-close-btn"
-          onclick="HSOverlay.close('#addFormContainer');">@Localizer["Close"]</button>
+        <button type="submit" class="btn btn-primary">@stringLocalizer["Save"]</button>
+        <button type="button" class="btn btn-outline-primary" 
+                onclick="HSOverlay.close('#addFormContainer');">
+                @stringLocalizer["Close"]
+        </button>
       </div>
     </form>
   </div>
 </div>
 
-<script>
-  
-</script>

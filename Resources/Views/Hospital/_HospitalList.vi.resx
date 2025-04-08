@@ -156,6 +156,9 @@
   <data name="Note" xml:space="preserve">
     <value>Ghi chú</value>
   </data>
+  <data name="OutDental" xml:space="preserve">
+    <value>Nha Khoa</value>
+  </data>
   <data name="OutPatient" xml:space="preserve">
     <value> Ngoại Khoa </value>
   </data>

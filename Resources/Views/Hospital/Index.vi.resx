@@ -117,83 +117,68 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Title" xml:space="preserve">
-    <value>Trang chủ</value>
-  </data>
-  <data name="HospitalSearch" xml:space="preserve">
-    <value>Tìm kiếm bệnh viện...</value>
-  </data>
-  <data name="ExpandText" xml:space="preserve">
-    <value>Mở rộng</value>
-  </data>
-  <data name="SearchText" xml:space="preserve">
-    <value>Tìm kiếm</value>
+  <data name="Add" xml:space="preserve">
+    <value>Thêm</value>
   </data>
   <data name="City" xml:space="preserve">
     <value>Tỉnh/Thành phố</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
   <data name="District" xml:space="preserve">
     <value>Quận/Huyện</value>
   </data>
-  <data name="Ward" xml:space="preserve">
-    <value>Phường/Xã</value>
+  <data name="ExpandText" xml:space="preserve">
+    <value>Mở rộng</value>
   </data>
-  <data name="Public" xml:space="preserve">
-    <value>Bệnh viện công</value>
+  <data name="HospitalSearch" xml:space="preserve">
+    <value>Tìm kiếm bệnh viện...</value>
+  </data>
+  <data name="HospitalType" xml:space="preserve">
+    <value>Loại hình:</value>
   </data>
   <data name="InPatient" xml:space="preserve">
     <value>Nội trú</value>
   </data>
+  <data name="InsuranceCoverage" xml:space="preserve">
+    <value>Có Bảo lãnh viện phí</value>
+  </data>
+  <data name="NonInsuranceCoverage" xml:space="preserve">
+    <value>Không được chi trả bảo hiểm</value>
+  </data>
   <data name="OutPatient" xml:space="preserve">
     <value>Ngoại trú</value>
   </data>
-  <data name="Dental" xml:space="preserve">
-    <value>Nha khoa</value>
+  <data name="Public" xml:space="preserve">
+    <value>Bệnh viện công</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Xóa Lọc</value>
+  </data>
+  <data name="SearchText" xml:space="preserve">
+    <value>Tìm kiếm</value>
   </data>
   <data name="SelectHospitalList" xml:space="preserve">
     <value>Chọn danh sách bệnh viện</value>
   </data>
-  <data name="InsuranceCoverage" xml:space="preserve">
-    <value>Bảo hiểm</value>
+  <data name="Ward" xml:space="preserve">
+    <value>Phường/Xã</value>
   </data>
-  <data name="NonInsuranceCoverage" xml:space="preserve">
-    <value>Không bảo hiểm</value>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>Thêm</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Xóa</value>
+  <data name="Dental" xml:space="preserve">
+    <value>Nha khoa</value>
   </data>
   <data name="Export" xml:space="preserve">
     <value>Xuất</value>
   </data>
-  <data name="HospitalName" xml:space="preserve">
-    <value>Tên bệnh viện</value>
-  </data>
-  <data name="HospitalAddress" xml:space="preserve">
-    <value>Địa chỉ</value>
-  </data>
-  <data name="PhoneNumber" xml:space="preserve">
-    <value>Số điện thoại</value>
-  </data>
   <data name="BillingTime" xml:space="preserve">
     <value>Thời gian hoạt động</value>
-  </data>
-  <data name="InsuranceAndDirectBilling" xml:space="preserve">
-    <value>Bảo hiểm và trả tiền viện phí trực tiếp</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Ghi chú</value>
   </data>
-  <data name="ServicesAndTypes" xml:space="preserve">
-    <value>Loại hình và dịch vụ</value>
-  </data>
   <data name="IsPublicHospital" xml:space="preserve">
     <value>Bệnh viện công</value>
-  </data>
-  <data name="IsBlackList" xml:space="preserve">
-    <value>Nằm trong danh sách đen?</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Lưu</value>
@@ -203,5 +188,20 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Sửa bệnh viện</value>
+  </data>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Tên bệnh viện</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="InsuranceAndDirectBilling" xml:space="preserve">
+    <value>Bảo hiểm và trả tiền viện phí trực tiếp</value>
+  </data>
+  <data name="IsBlackList" xml:space="preserve">
+    <value>Nằm trong danh sách đen?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Trang chủ</value>
   </data>
 </root>

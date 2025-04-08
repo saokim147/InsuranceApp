@@ -1,13 +1,14 @@
-﻿@using InsuranceWebApp.Helper
-@model IEnumerable<HospitalViewModel>
+﻿@using InsuranceWebApp.Data
+@using InsuranceWebApp.Helper
+@model List<HospitalDTO>
 @{
     ViewData["Title"] = "Bản đồ";
 }
 
-
+<div class="currentLange"></div>
 <div id="map" class="w-100 h-[400px]"></div>
-<button class="@Css.BtnSecondary">
-    <heroicon class="size-4" />
+<button class="@Css.BtnSecondary mt-2">
+    <heroicon class="size-4" name="ArrowPath" />
 </button>
 <div class="text-gray-800 dark:text-neutral-200">Cơ sở y tế gần nhất</div>
 <ul id="location-list" class="mx-2 my-4 divide-y shadow-md sm:mx-0"></ul>

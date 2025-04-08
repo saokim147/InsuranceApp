@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.Extensions.Localization;
 using InsuranceWebApp.Helper;
 
 namespace InsuranceWebApp.TagHelpers
@@ -9,7 +10,11 @@ namespace InsuranceWebApp.TagHelpers
     [HtmlTargetElement("search-box")]
     public class SearchBoxTagHelper : InputTagHelper
     {
-        public SearchBoxTagHelper(IHtmlGenerator generator) : base(generator) { }
+        private readonly IStringLocalizer<SharedResource> _localizer;
+        public SearchBoxTagHelper(IHtmlGenerator generator, IStringLocalizer<SharedResource> localizer) : base(generator)
+        {
+            _localizer = localizer;
+        }
 
         [HtmlAttributeName("id")]
         public required string InputId { get; set; }
@@ -40,9 +45,9 @@ namespace InsuranceWebApp.TagHelpers
             }
             if (!string.IsNullOrEmpty(MaxChar))
             {
-                condition += $"this.value.length<={MaxChar}";
+                condition += $" && this.value.length<={MaxChar}";
             }
-            if(!string.IsNullOrEmpty(Label))
+            if (!string.IsNullOrEmpty(Label))
             {
                 var label = new TagBuilder("label");
                 label.Attributes.Add("for", InputId);
@@ -57,7 +62,9 @@ namespace InsuranceWebApp.TagHelpers
             displayInput.Attributes.Add("name", Name);
             displayInput.Attributes.Add("id", InputId);
             displayInput.Attributes.Add("class", Css.Input);
-            displayInput.Attributes.Add("placeholder", PlaceHolder);
+            var localizedPlaceHolderText = _localizer[PlaceHolder];
+            var placeHolderText = localizedPlaceHolderText.ResourceNotFound ? PlaceHolder : localizedPlaceHolderText;
+            displayInput.Attributes.Add("placeholder", placeHolderText);
             displayInput.Attributes.Add("autocomplete", "off");
             displayInput.Attributes.Add("hx-get", Url);
             displayInput.Attributes.Add("hx-target", $"#{ListId}");
@@ -65,14 +72,14 @@ namespace InsuranceWebApp.TagHelpers
             {
                 displayInput.Attributes.Add("hx-include", Include);
             }
-
             if (condition != string.Empty)
             {
-                displayInput.Attributes.Add("hx-trigger", $"keyup changed delay:250ms[{condition}]");
+                //var unescapedString = new HtmlString($"input changed delay:250ms[{condition}]");
+                displayInput.Attributes.Add("hx-trigger", $"input[{condition}] changed delay:250ms");
             }
             else
             {
-                displayInput.Attributes.Add("hx-trigger", $"keyup changed delay:250ms");
+                displayInput.Attributes.Add("hx-trigger", $"input changed delay:250ms");
             }
             container.InnerHtml.AppendHtml(displayInput);
 
@@ -88,7 +95,7 @@ namespace InsuranceWebApp.TagHelpers
                 hiddenInput.Attributes.Add("type", "hidden");
                 hiddenInput.Attributes.Add("name", For.Name.ToString());
                 var model = For.Model != null ? For.Model.ToString() : string.Empty;
-                hiddenInput.Attributes.Add("value",model);
+                hiddenInput.Attributes.Add("value", model);
                 container.InnerHtml.AppendHtml(hiddenInput);
             }
             // Icon
@@ -104,7 +111,7 @@ namespace InsuranceWebApp.TagHelpers
 
             output.Content.AppendHtml(container);
             output.Content.AppendHtml(listContainer);
-           
+
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿using System.Globalization;
 using System.Text;
+using System.Text.RegularExpressions;
+using DocumentFormat.OpenXml.Bibliography;
+using Org.BouncyCastle.Bcpg.OpenPgp;
 namespace InsuranceWebApp.Helper
 {
     public static class StringExtension
@@ -35,7 +38,25 @@ namespace InsuranceWebApp.Helper
             return value ? trueChar : falseChar;
         }
 
-     
+        //public static string GetCity(this string address)
+        //{
+        //    return CityRegex().Match(address).Groups[1].Value;
+        //}
+        //public static string GetDistrict(this string address)
+        //{
+        //    return DistrictRegex().Match(address).Groups[1].Value;
+        //}
+        //public static string GetWard(this string address)
+        //{
+        //    return WardsRegex().Match(address).Groups[1].Value;
+        //}
 
+        //[GeneratedRegex(@"Thành phố([^,]+)")]
+        //private static partial Regex CityRegex();
+
+        //[GeneratedRegex(@"(Quận|Huyện) ([^,]+)")]
+        //private static partial Regex DistrictRegex();
+        //[GeneratedRegex(@"Phường([^,]+)")]
+        //private static partial Regex WardsRegex();
     }
 }

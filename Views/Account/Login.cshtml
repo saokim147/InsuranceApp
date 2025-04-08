@@ -1,10 +1,13 @@
 ﻿@model LoginViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> stringLocalizer
 @{
     ViewData["Title"] = "Đăng nhập";
 }
 <div class="flex h-screen items-center justify-center">
     <div class="w-full rounded-lg border bg-white p-10 dark:bg-neutral-800 dark:border-gray-700 sm:max-w-md md:mt-0">
-        <h2 class="mb-4 text-2xl font-bold dark:text-white">@ViewData["Title"]</h2>
+        <h2 class="mb-4 text-2xl font-bold dark:text-white">@stringLocalizer["Login"]</h2>
         <form asp-action="Login" asp-controller="Account" method="post">
             <div class="mb-4">
                 <label asp-for="Email"
@@ -14,7 +17,7 @@
             </div>
             <div class="mb-4">
                 <label asp-for="Password"
-                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">@stringLocalizer["Password"]</label>
                 <input asp-for="Password" class="input" type="password" placeholder="Password">
                 <span asp-validation-for="Password" class="text-sm text-red-500"></span>
             </div>
@@ -23,20 +26,18 @@
                     <input type="checkbox"
                         class="shrink-0 mt-0.5 rounded border-gray-200 text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                         id="remember-checkbox">
-                    <label for="remember-checkbox" class="ml-2 text-sm text-gray-500 dark:text-neutral-400">Nhớ mật
-                        khẩu</label>
+                    <label for="remember-checkbox" class="ml-2 text-sm text-gray-500 dark:text-neutral-400">@stringLocalizer["RememberPassword"]</label>
                 </div>
                 <a asp-controller="Account" asp-action="ChangePassword"
                     class="text-sm text-secondary-500 underline decoration-secondary-500 hover:opacity-80 focus:outline-none focus:opacity-80 dark:text-secondary-300 dark:decoration-secondary-300">
-                    Quên mật khẩu?
+                    @stringLocalizer["ForgotPassword"]
                 </a>
             </div>
             <div class="mt-2 text-center dark:text-white">
-                Chưa có tài khoản ? <a asp-controller="Account" asp-action="Register"
-                    class="text-secondary-500 underline decoration-secondary-500 hover:opacity-80 focus:outline-none focus:opacity-80 dark:text-secondary-300 dark:decoration-secondary-300">Đăng
-                    kí</a>
+                @stringLocalizer["NoAccount"] <a asp-controller="Account" asp-action="Register"
+                    class="text-secondary-500 underline decoration-secondary-500 hover:opacity-80 focus:outline-none focus:opacity-80 dark:text-secondary-300 dark:decoration-secondary-300">@stringLocalizer["Register"]</a>
             </div>
-            <button type="submit" class="btn btn-primary mt-2 w-full">Đăng nhập</button>
+            <button type="submit" class="btn btn-primary mt-2 w-full">@stringLocalizer["Login"]</button>
         </form>
     </div>
 </div>

@@ -84,6 +84,7 @@
 
         // Show dropdown on input
         this.input.addEventListener("input", () => {
+            //console.log(this.input.value.length);
             if (this.input.value.trim().length > 0) {
                 this.showList();
             } else {

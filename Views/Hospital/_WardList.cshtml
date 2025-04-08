@@ -1,10 +1,10 @@
-@model List<WardDTO>
+﻿@model List<WardDTO>
 @using InsuranceWebApp.Data;
 
 @if (!Model.Any())
 {
     <div data-search="no-result"
-        class="search-option w-full cursor-pointer  px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+        class="search-option w-full cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
         không Tìm thấy
     </div>
 }
@@ -13,7 +13,7 @@ else
     @foreach (var item in Model)
     {
         <div data-value="@item.WardId"
-            class="search-option w-full cursor-pointer  px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+            class="search-option w-full cursor-pointer px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
             @item.WardName
         </div>
     }
