@@ -6,6 +6,8 @@ using InsuranceWebApp.Repository;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 
+var zaloMiniAppOrigins = "AllowZaloMiniApp";
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
@@ -67,6 +69,17 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     ];
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: zaloMiniAppOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:2999")
+                                .AllowAnyMethod()
+                                .AllowAnyHeader();
+                      });
+});
+
 
 var app = builder.Build();
 app.UseRequestLocalization();
@@ -80,7 +93,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseCors(zaloMiniAppOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 
