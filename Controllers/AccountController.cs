@@ -1,5 +1,6 @@
 ﻿using InsuranceWebApp.Data;
 using InsuranceWebApp.Models;
+using InsuranceWebApp.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,15 +12,18 @@ namespace InsuranceWebApp.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private ILogger<AccountController> _logger;
+        private readonly IZaloApiService _zaloApiService;
         public AccountController(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            ILogger<AccountController> logger)
+            ILogger<AccountController> logger,
+            IZaloApiService zaloApiService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _logger = logger;
+            _zaloApiService = zaloApiService;
         }
 
         public IActionResult Login()
@@ -145,7 +149,11 @@ namespace InsuranceWebApp.Controllers
             return View(new ChangePasswordViewModel { Email = email });
         }
 
-
+        public async Task<IActionResult> GetZaloUserLocation(string userAccessToken,string token)
+        {
+            var result= await _zaloApiService.GetZaloUserInfoAsync(userAccessToken,token);
+            return Json(result);
+        }
      
 
     }

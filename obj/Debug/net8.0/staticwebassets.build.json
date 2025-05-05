@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V4VaCDr50GE8h34l0r1igMu8DCsNpiAgrZbVUwQZhaY=",
+  "Hash": "mFD6AuuHPhJ1+7+3Bs5XSQ8znAvUVzST9L0BcbivyHg=",
   "Source": "InsuranceWebApp",
   "BasePath": "_content/InsuranceWebApp",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7cy1qvb4wd",
-      "Integrity": "F0rYZ5f6/vU+h4B1g/71CsRJTjVeURz9I/GkmvFlXNQ=",
+      "Fingerprint": "pkc9s3eilr",
+      "Integrity": "F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\hospital.js"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pr2a2e17d7",
-      "Integrity": "hTarx8fftaQAWjcjJcg0YdmQXQ3uIYPuvQ9YtcvIzaI=",
+      "Fingerprint": "igvd5dt09m",
+      "Integrity": "ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\map.js"
@@ -19183,8 +19183,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "68441qmq60",
-      "Integrity": "ZhdVjcd5qgUGfms8Uo0g0KAF//TgTLXE+hYC1uwa/OQ=",
+      "Fingerprint": "k9q4t5wyji",
+      "Integrity": "+E5xowEBW4gs/43xJ4EGq6Kklu2jW27/7hsVcZfn0sg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json"
@@ -19225,8 +19225,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7zv8lqa2nn",
-      "Integrity": "41AL2eLDwlxtvGQDxWz0N4+IpPGquupwZtBdXfVq1pg=",
+      "Fingerprint": "0ibug073rb",
+      "Integrity": "SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\map\\style.json"
@@ -19246,8 +19246,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pvnks7v33t",
-      "Integrity": "5X0LnWG5siMiNuUf4xASmVlnsE7O7nI9UZ6NzhnqzeA=",
+      "Fingerprint": "0vl3a8xass",
+      "Integrity": "lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\map\\tileset.json"
@@ -19604,51 +19604,6 @@
       ]
     },
     {
-      "Route": "js/hospital.7cy1qvb4wd.js",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4083"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"F0rYZ5f6/vU+h4B1g/71CsRJTjVeURz9I/GkmvFlXNQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:44:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7cy1qvb4wd"
-        },
-        {
-          "Name": "label",
-          "Value": "js/hospital.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-F0rYZ5f6/vU+h4B1g/71CsRJTjVeURz9I/GkmvFlXNQ="
-        }
-      ]
-    },
-    {
       "Route": "js/hospital.js",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
       "Selectors": [],
@@ -19659,7 +19614,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4083"
+          "Value": "4085"
         },
         {
           "Name": "Content-Type",
@@ -19667,11 +19622,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F0rYZ5f6/vU+h4B1g/71CsRJTjVeURz9I/GkmvFlXNQ=\""
+          "Value": "\"F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:44:59 GMT"
+          "Value": "Fri, 02 May 2025 02:37:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19681,7 +19636,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F0rYZ5f6/vU+h4B1g/71CsRJTjVeURz9I/GkmvFlXNQ="
+          "Value": "sha256-F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA="
+        }
+      ]
+    },
+    {
+      "Route": "js/hospital.pkc9s3eilr.js",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 02:37:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pkc9s3eilr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/hospital.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA="
+        }
+      ]
+    },
+    {
+      "Route": "js/map.igvd5dt09m.js",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 03:17:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "igvd5dt09m"
+        },
+        {
+          "Name": "label",
+          "Value": "js/map.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8="
         }
       ]
     },
@@ -19696,7 +19741,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3025"
+          "Value": "2990"
         },
         {
           "Name": "Content-Type",
@@ -19704,11 +19749,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hTarx8fftaQAWjcjJcg0YdmQXQ3uIYPuvQ9YtcvIzaI=\""
+          "Value": "\"ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:17:51 GMT"
+          "Value": "Fri, 02 May 2025 03:17:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19718,52 +19763,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hTarx8fftaQAWjcjJcg0YdmQXQ3uIYPuvQ9YtcvIzaI="
-        }
-      ]
-    },
-    {
-      "Route": "js/map.pr2a2e17d7.js",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3025"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hTarx8fftaQAWjcjJcg0YdmQXQ3uIYPuvQ9YtcvIzaI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:17:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pr2a2e17d7"
-        },
-        {
-          "Name": "label",
-          "Value": "js/map.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hTarx8fftaQAWjcjJcg0YdmQXQ3uIYPuvQ9YtcvIzaI="
+          "Value": "sha256-ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8="
         }
       ]
     },
@@ -19790,7 +19790,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:43:51 GMT"
+          "Value": "Mon, 28 Apr 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19835,7 +19835,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 04:43:51 GMT"
+          "Value": "Mon, 28 Apr 2025 10:07:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25612,7 +25612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:03 GMT"
+          "Value": "Wed, 09 Apr 2025 16:23:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25694,7 +25694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:03 GMT"
+          "Value": "Wed, 09 Apr 2025 16:23:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94060,51 +94060,6 @@
       ]
     },
     {
-      "Route": "static/map/font/Noto Sans Regular/style.68441qmq60.json",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30140"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZhdVjcd5qgUGfms8Uo0g0KAF//TgTLXE+hYC1uwa/OQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "68441qmq60"
-        },
-        {
-          "Name": "label",
-          "Value": "static/map/font/Noto Sans Regular/style.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZhdVjcd5qgUGfms8Uo0g0KAF//TgTLXE+hYC1uwa/OQ="
-        }
-      ]
-    },
-    {
       "Route": "static/map/font/Noto Sans Regular/style.json",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
       "Selectors": [],
@@ -94115,7 +94070,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30140"
+          "Value": "30134"
         },
         {
           "Name": "Content-Type",
@@ -94123,11 +94078,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZhdVjcd5qgUGfms8Uo0g0KAF//TgTLXE+hYC1uwa/OQ=\""
+          "Value": "\"+E5xowEBW4gs/43xJ4EGq6Kklu2jW27/7hsVcZfn0sg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:03 GMT"
+          "Value": "Wed, 16 Apr 2025 14:43:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94137,7 +94092,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZhdVjcd5qgUGfms8Uo0g0KAF//TgTLXE+hYC1uwa/OQ="
+          "Value": "sha256-+E5xowEBW4gs/43xJ4EGq6Kklu2jW27/7hsVcZfn0sg="
+        }
+      ]
+    },
+    {
+      "Route": "static/map/font/Noto Sans Regular/style.k9q4t5wyji.json",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+E5xowEBW4gs/43xJ4EGq6Kklu2jW27/7hsVcZfn0sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 14:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9q4t5wyji"
+        },
+        {
+          "Name": "label",
+          "Value": "static/map/font/Noto Sans Regular/style.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+E5xowEBW4gs/43xJ4EGq6Kklu2jW27/7hsVcZfn0sg="
         }
       ]
     },
@@ -94224,7 +94224,7 @@
       ]
     },
     {
-      "Route": "static/map/style.7zv8lqa2nn.json",
+      "Route": "static/map/style.0ibug073rb.json",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -94234,7 +94234,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30214"
+          "Value": "41936"
         },
         {
           "Name": "Content-Type",
@@ -94242,11 +94242,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"41AL2eLDwlxtvGQDxWz0N4+IpPGquupwZtBdXfVq1pg=\""
+          "Value": "\"SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 03:08:14 GMT"
+          "Value": "Mon, 05 May 2025 02:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94256,7 +94256,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7zv8lqa2nn"
+          "Value": "0ibug073rb"
         },
         {
           "Name": "label",
@@ -94264,7 +94264,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-41AL2eLDwlxtvGQDxWz0N4+IpPGquupwZtBdXfVq1pg="
+          "Value": "sha256-SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI="
         }
       ]
     },
@@ -94279,7 +94279,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30214"
+          "Value": "41936"
         },
         {
           "Name": "Content-Type",
@@ -94287,11 +94287,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"41AL2eLDwlxtvGQDxWz0N4+IpPGquupwZtBdXfVq1pg=\""
+          "Value": "\"SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 03:08:14 GMT"
+          "Value": "Mon, 05 May 2025 02:36:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94301,7 +94301,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-41AL2eLDwlxtvGQDxWz0N4+IpPGquupwZtBdXfVq1pg="
+          "Value": "sha256-SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI="
+        }
+      ]
+    },
+    {
+      "Route": "static/map/tileset.0vl3a8xass.json",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 05 May 2025 02:10:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0vl3a8xass"
+        },
+        {
+          "Name": "label",
+          "Value": "static/map/tileset.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc="
         }
       ]
     },
@@ -94316,7 +94361,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22188"
+          "Value": "22230"
         },
         {
           "Name": "Content-Type",
@@ -94324,11 +94369,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5X0LnWG5siMiNuUf4xASmVlnsE7O7nI9UZ6NzhnqzeA=\""
+          "Value": "\"lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:20:03 GMT"
+          "Value": "Mon, 05 May 2025 02:10:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94338,52 +94383,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5X0LnWG5siMiNuUf4xASmVlnsE7O7nI9UZ6NzhnqzeA="
-        }
-      ]
-    },
-    {
-      "Route": "static/map/tileset.pvnks7v33t.json",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22188"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5X0LnWG5siMiNuUf4xASmVlnsE7O7nI9UZ6NzhnqzeA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Apr 2025 02:20:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pvnks7v33t"
-        },
-        {
-          "Name": "label",
-          "Value": "static/map/tileset.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5X0LnWG5siMiNuUf4xASmVlnsE7O7nI9UZ6NzhnqzeA="
+          "Value": "sha256-lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc="
         }
       ]
     },

@@ -3,11 +3,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://192.168.1.2:7189/static/map/tileset.json"
+      "url": "https://localhost:7189/static/map/tileset.json"
     }
   },
-  "sprites": "https://192.168.1.2:7189/static/map/sprite.json",
-  "glyphs": "https://192.168.1.2:7189/static/map/font/{fontstack}/{range}.pbf",
+  "sprites": "https://localhost:7189/static/map/sprite.json",
+  "glyphs": "https://localhost:7189/static/map/font/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",

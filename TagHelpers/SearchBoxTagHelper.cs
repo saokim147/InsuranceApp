@@ -105,7 +105,6 @@ namespace InsuranceWebApp.TagHelpers
             buttonBuilder.Attributes.Add("tabindex", "-1");
             var childContent = await output.GetChildContentAsync();
             buttonBuilder.InnerHtml.AppendHtml(childContent);
-            //
 
             container.InnerHtml.AppendHtml(buttonBuilder);
 

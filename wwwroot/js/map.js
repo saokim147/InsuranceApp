@@ -1,13 +1,13 @@
 ﻿let jsonLocationList = [];
 const defaultLocation = [106.7035, 10.816];
-
 function createLocationCard(item) {
-  return `<li class="bg-white p-2 shadow text-gray-800 dark:text-neutral-200 dark:bg-neutral-800">
-                <div class="flex flex-col text-sm space-y-2">
-                    <div><strong>Cơ sở y tế:</strong> ${item.hospitalName}</div>
-                    <div class=" border-neutral-200"><strong>Địa chỉ:</strong> ${item.hospitalAddress}</div>
-                </div>
-            </li>`;
+  return /*html*/ `
+        <li class="bg-white p-2 shadow text-gray-800 dark:text-neutral-200 dark:bg-neutral-800">
+            <div class="flex flex-col text-sm space-y-2">
+                <div><strong>Cơ sở y tế:</strong> ${item.hospitalName}</div>
+                <div class="border-neutral-200"><strong>Địa chỉ:</strong> ${item.hospitalAddress}</div>
+            </div>
+        </li>`;
 }
 
 async function fetchNearByLocation(position, locationContainer) {
@@ -15,6 +15,7 @@ async function fetchNearByLocation(position, locationContainer) {
     latitude: position.latitude,
     longitude: position.longitude,
   });
+
   const headers = { "Content-Type": "application/json" };
 
   try {
@@ -23,14 +24,14 @@ async function fetchNearByLocation(position, locationContainer) {
 
     const data = await response.json();
     if (Array.isArray(data.hospitals)) {
-      locationContainer.innerHTML = data.hospitals.map(createLocationCard).join("");
+      locationContainer.innerHTML = data.hospitals
+        .map(createLocationCard)
+        .join("");
       return data.hospitals;
     } else {
-      console.log("No nearby locations found.");
       return [];
     }
   } catch (error) {
-    console.error(error);
     return [];
   }
 }
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const locationContainer = document.getElementById("location-list");
   const map = new maplibregl.Map({
     container: "map",
-      style: "https://192.168.1.2:7262/static/map/style.json",
+    style: "https://localhost:7262/static/map/style.json",
     center: defaultLocation,
     zoom: 14,
   });
@@ -62,12 +63,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   map.addControl(
-    new maplibregl.NavigationControl({ visualizePitch: true, showZoom: true })
+    new maplibregl.NavigationControl({
+      visualizePitch: true,
+      showZoom: true,
+    })
   );
   map.addControl(geolocateControl);
 
   map.on("load", async () => {
     geolocateControl.trigger();
+
     map.fitBounds([
       [102.0409, 7.730748],
       [111.6685, 23.47731],
@@ -77,13 +82,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       { latitude: defaultLocation[1], longitude: defaultLocation[0] },
       locationContainer
     );
+
     geolocateControl.on("geolocate", async (position) => {
       const userLocation = position.coords;
+
       map.flyTo({
         center: [userLocation.longitude, userLocation.latitude],
         zoom: 20,
         essential: true,
       });
+
       jsonLocationList = await fetchNearByLocation(
         userLocation,
         locationContainer

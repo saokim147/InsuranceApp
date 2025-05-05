@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace InsuranceWebApp.Data;
-
+﻿namespace InsuranceWebApp.Data;
 public partial class AspNetRole
 {
     public string Id { get; set; } = null!;

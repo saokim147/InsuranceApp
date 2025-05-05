@@ -8,10 +8,6 @@
 //  }
 //};
 
-var isCreatedOpen = false;
-
-
-
 // get the item id
 window.getSessionIdList = function () {
   let items = [];
@@ -48,9 +44,7 @@ window.restoreCheckedCheckbox = function () {
   }
 };
 
-window.addEventListener("unload", () => {
-  sessionStorage.clear();
-});
+window.addEventListener("unload", () => sessionStorage.clear());
 
 const successEditHandler = () => {
   window.dispatchEvent(
@@ -82,7 +76,7 @@ const successCreateHandler = () => {
       },
     })
   );
-  HSOverlay.close('#addFormContainer');
+  HSOverlay.close("#addFormContainer");
 };
 
 const failedCreateHandler = () => {
@@ -95,23 +89,31 @@ const failedCreateHandler = () => {
 
 document.addEventListener("htmx:afterSwap", (e) => {
   if (e.detail.elt.id === "editFormContainer") {
-    new AutoCompleteHandler("edit-citySelect","edit-city-list","CityId");
-    new AutoCompleteHandler("edit-districtSelect","edit-district-list","DistrictId");
-    new AutoCompleteHandler("edit-wardSelect","edit-ward-list","WardId");
+    new AutoCompleteHandler("edit-citySelect", "edit-city-list", "CityId");
+    new AutoCompleteHandler(
+      "edit-districtSelect",
+      "edit-district-list",
+      "DistrictId"
+    );
+    new AutoCompleteHandler("edit-wardSelect", "edit-ward-list", "WardId");
     document.getElementById("edit-citySelect").value = currentCityName;
     document.getElementById("edit-districtSelect").value = currentDistrictName;
     document.getElementById("edit-wardSelect").value = currentWardName;
-    document.addEventListener("successUpdateEvent", successEditHandler);  
+    document.addEventListener("successUpdateEvent", successEditHandler);
     document.addEventListener("failedUpdateEvent", failedEditHandler);
   }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    new AutoCompleteHandler("create-citySelect","create-city-list","CityId");
-    new AutoCompleteHandler("create-districtSelect","create-district-list","DistrictId");
-    new AutoCompleteHandler("create-wardSelect","create-ward-list","WardId");
-    document.addEventListener("successCreateEvent", successCreateHandler);
-    document.addEventListener("failedCreateEvent", failedCreateHandler);
+  new AutoCompleteHandler("create-citySelect", "create-city-list", "CityId");
+  new AutoCompleteHandler(
+    "create-districtSelect",
+    "create-district-list",
+    "DistrictId"
+  );
+  new AutoCompleteHandler("create-wardSelect", "create-ward-list", "WardId");
+  document.addEventListener("successCreateEvent", successCreateHandler);
+  document.addEventListener("failedCreateEvent", failedCreateHandler);
   // accordation
   document.getElementById("toggle-btn").addEventListener("click", () => {
     let accordation = document.getElementById("accordation");

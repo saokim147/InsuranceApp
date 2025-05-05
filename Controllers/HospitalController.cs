@@ -59,7 +59,16 @@ namespace InsuranceWebApp.Controllers
             {
                 return Json(hospitalNameList.toSearchDTO());
             }
-            return View(searchViewModelList);
+            return View("_SearchList", searchViewModelList);
+        }
+
+
+        public IActionResult Check()
+        {
+            // Response.Headers.AccessControlAllowOrigin = "https://localhost:2999";
+            // Response.Headers.AccessControlAllowMethods = "*";
+            // Response.Headers.AccessControlAllowHeaders = "*";
+            return Json("OK");
         }
 
 
@@ -116,8 +125,12 @@ namespace InsuranceWebApp.Controllers
                     sortOrder,
                     isBlackList,
                     lang);
+      
             if (Request.Headers.ContentType == HttpContentTypeFormat.JSON)
             {
+                Response.Headers.AccessControlAllowOrigin = "*";
+                Response.Headers.AccessControlAllowMethods = "*";
+                Response.Headers.AccessControlAllowHeaders = "*";
                 return Json(hospitalPagedList.ToInsuranceDTO());
             }
             if (Request.IsHtmx())
@@ -127,8 +140,6 @@ namespace InsuranceWebApp.Controllers
             }
             return View(insuranceViewModel);
         }
-
-
         [Authorize]
         public IActionResult Privacy()
         {
@@ -316,7 +327,7 @@ namespace InsuranceWebApp.Controllers
         {
             var data = await _hospitalRepository.GetFileResponseDTOAsync(isBlackList, lang, cityName);
             Response.Htmx(h =>
-                h.Redirect(Url.Action("Export", new { fileType, isBlackList, lang,cityName }))
+                h.Redirect(Url.Action("Export", new { fileType, isBlackList, lang, cityName }))
             );
             var id = DateTime.Now.ToString();
             switch (fileType.ToLower())
@@ -347,6 +358,10 @@ namespace InsuranceWebApp.Controllers
             hospital.CityId = model.CityId;
             hospital.DistrictId = model.DistrictId;
             hospital.WardId = model.WardId;
+        }
+        public IActionResult Testing()
+        {
+            return Json("qwe");
         }
     }
 }

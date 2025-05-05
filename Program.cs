@@ -6,8 +6,6 @@ using InsuranceWebApp.Repository;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 
-var zaloMiniAppOrigins = "AllowZaloMiniApp";
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
@@ -42,9 +40,10 @@ builder.Services.AddSingleton(
         var path = builder.Configuration["MBTilesPath"] ?? string.Empty;
         return new MBTileProvider(path);
     }
- );
+);
 
 builder.Services.AddScoped<IMapService, MapService>();
+builder.Services.AddHttpClient<IZaloApiService, ZaloApiService>();
 builder.Services.AddScoped<IHospitalRepository, HospitalRepository>();
 builder.Services.AddScoped<ExportService>();
 
@@ -69,20 +68,24 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     ];
 });
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: zaloMiniAppOrigins,
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:2999")
-                                .AllowAnyMethod()
-                                .AllowAnyHeader();
-                      });
-});
+
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy(name: zaloMiniAppOrigins,
+//                      policy =>
+//                      {
+//                          policy.AllowAnyOrigin()
+//                                .AllowAnyMethod()
+//                                .AllowAnyHeader();
+//                      });
+//});
 
 
 var app = builder.Build();
 app.UseRequestLocalization();
+
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -90,10 +93,14 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
 
-app.UseRouting();
-app.UseCors(zaloMiniAppOrigins);
+app.UseRouting(); 
+app.UseCors(x => x
+     .AllowAnyMethod()
+     .AllowAnyHeader()
+     .AllowCredentials()
+      .SetIsOriginAllowed(origin => true));
+app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
