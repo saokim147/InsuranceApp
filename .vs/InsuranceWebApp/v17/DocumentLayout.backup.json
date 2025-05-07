@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Do an\\InsuranceWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\sprite.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -47,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -325,59 +325,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "sprite.json",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\sprite.json",
-              "RelativeDocumentMoniker": "wwwroot\\static\\map\\sprite.json",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\sprite.json",
-              "RelativeToolTip": "wwwroot\\static\\map\\sprite.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T02:14:39.309Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAADwv48AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T07:54:53.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "ZaloApiService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ZaloApiService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
+              "RelativeToolTip": "Services\\ZaloApiService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADgvxYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:03:10.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HospitalController.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HospitalController.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
+              "RelativeToolTip": "Controllers\\HospitalController.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAawI0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:00:24.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Do an\\InsuranceWebApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAawDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAawG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T16:36:00.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAADwv5kAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:54:53.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ZaloApiService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
-              "RelativeDocumentMoniker": "Services\\ZaloApiService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
-              "RelativeToolTip": "Services\\ZaloApiService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADgvxQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:03:10.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MailData.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\MailData.cs",
               "RelativeDocumentMoniker": "Services\\MailData.cs",
@@ -385,12 +382,11 @@
               "RelativeToolTip": "Services\\MailData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T02:53:12.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T02:53:12.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "style.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
               "RelativeDocumentMoniker": "wwwroot\\static\\map\\style.json",
@@ -398,12 +394,11 @@
               "RelativeToolTip": "wwwroot\\static\\map\\style.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T14:44:51.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T14:44:51.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "tileset.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
               "RelativeDocumentMoniker": "wwwroot\\static\\map\\tileset.json",
@@ -411,12 +406,11 @@
               "RelativeToolTip": "wwwroot\\static\\map\\tileset.json",
               "ViewState": "AgIAAAIAAAAAAAAAAAAjwBAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:19:17.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T02:19:17.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MapDTO.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\MapDTO.cs",
               "RelativeDocumentMoniker": "Data\\MapDTO.cs",
@@ -428,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "MapController.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\MapController.cs",
               "RelativeDocumentMoniker": "Controllers\\MapController.cs",
@@ -436,8 +430,7 @@
               "RelativeToolTip": "Controllers\\MapController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAawBYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:30:31.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T04:30:31.956Z"
             },
             {
               "$type": "Document",
@@ -453,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -461,12 +454,23 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:18:43.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T02:18:43.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "sprite.json",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\sprite.json",
+              "RelativeDocumentMoniker": "wwwroot\\static\\map\\sprite.json",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\sprite.json",
+              "RelativeToolTip": "wwwroot\\static\\map\\sprite.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T02:14:39.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IZaloApiService.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IZaloApiService.cs",
               "RelativeDocumentMoniker": "Services\\IZaloApiService.cs",
@@ -474,8 +478,7 @@
               "RelativeToolTip": "Services\\IZaloApiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T02:53:39.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T02:53:39.081Z"
             },
             {
               "$type": "Document",
@@ -491,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IMapService.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IMapService.cs",
               "RelativeDocumentMoniker": "Services\\IMapService.cs",
@@ -499,12 +502,11 @@
               "RelativeToolTip": "Services\\IMapService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:27:01.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T04:27:01.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Account\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
@@ -512,8 +514,7 @@
               "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T15:52:17.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T15:52:17.486Z"
             },
             {
               "$type": "Document",
@@ -526,19 +527,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T09:15:12.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HospitalController.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HospitalController.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
-              "RelativeToolTip": "Controllers\\HospitalController.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAASwAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T09:00:24.245Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -802,8 +790,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAkwBMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:18:37.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T02:18:37.944Z"
             },
             {
               "$type": "Document",
@@ -839,8 +826,7 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-14T17:03:16.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T17:03:16.61Z"
             },
             {
               "$type": "Document",
@@ -864,8 +850,7 @@
               "RelativeToolTip": "wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T14:43:11.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T14:43:11.392Z"
             },
             {
               "$type": "Document",
@@ -924,8 +909,7 @@
               "RelativeToolTip": "wwwroot\\lib\\maplibre-gl\\maplibre-gl.js",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-09T16:23:16.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T16:23:16.901Z"
             },
             {
               "$type": "Document",
@@ -1114,8 +1098,7 @@
               "RelativeToolTip": "Helper\\HospitalModelExtension.cs",
               "ViewState": "AgIAANkAAAAAAAAAAIBJwN8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T14:19:01.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:19:01.065Z"
             },
             {
               "$type": "Document",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InsuranceWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cd0fac8df17a80d11f0720ef76debc734388c90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1aa08e0f099bd04793a9e0176fd5f8ffe2d6aebf")]
 [assembly: System.Reflection.AssemblyProductAttribute("InsuranceWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InsuranceWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
