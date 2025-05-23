@@ -42,7 +42,6 @@ public class ExportService
             cell.Style.Border.BottomBorder = XLBorderStyleValues.Thin;
         }
 
-        // Write data
         int row = 2;
         foreach (var item in data)
         {
@@ -51,7 +50,6 @@ public class ExportService
                 var cell = worksheet.Cell(row, i + 1);
                 var value = properties[i].GetValue(item);
 
-                // Special handling for boolean values
                 if (value is bool boolValue)
                 {
                     cell.Value = boolValue ? "Yes" : "No";

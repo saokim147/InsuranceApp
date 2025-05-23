@@ -7,11 +7,11 @@
     "sources": {
         "openmaptiles": {
             "type": "vector",
-            "url": "https://9d5d-2001-ee0-4f04-dc20-343a-d0f6-cac5-c616.ngrok-free.app/static/map/tileset.json"
+            "url": "https://api-uat-ibmi.baominh.vn:8500/insurance/static/map/tileset.json"
         }
     },
-    "sprites": "https://9d5d-2001-ee0-4f04-dc20-343a-d0f6-cac5-c616.ngrok-free.app/static/map/sprite.json",
-    "glyphs": "https://9d5d-2001-ee0-4f04-dc20-343a-d0f6-cac5-c616.ngrok-free.app/Map/{fontstack}/{range}.pbf",
+    "sprites": "https://api-uat-ibmi.baominh.vn:8500/insurance/static/map/sprite.json",
+    "glyphs": "https://api-uat-ibmi.baominh.vn:8500/insurance/Map/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",

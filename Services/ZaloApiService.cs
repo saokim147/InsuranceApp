@@ -21,8 +21,8 @@ namespace InsuranceWebApp.Services
                 request.Headers.Add("access_token", userAccessToken);
                 request.Headers.Add("code", token);
                 request.Headers.Add("secret_key", _secretKey);
-
                 var response = await _httpClient.SendAsync(request);
+
                 if (response.IsSuccessStatusCode)
                 {
                     var body = await response.Content.ReadAsStringAsync();

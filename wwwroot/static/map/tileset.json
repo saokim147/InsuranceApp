@@ -1,6 +1,6 @@
 {
     "tiles": [
-        "https://9d5d-2001-ee0-4f04-dc20-343a-d0f6-cac5-c616.ngrok-free.app/tiles/{z}/{x}/{y}.pbf"
+        "https://composite-alternate-coal-demonstrates.trycloudflare.com/tiles/{z}/{x}/{y}.pbf"
     ],
   "name": "OpenMapTiles",
   "format": "pbf",

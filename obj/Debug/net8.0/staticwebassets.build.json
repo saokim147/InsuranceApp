@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mFD6AuuHPhJ1+7+3Bs5XSQ8znAvUVzST9L0BcbivyHg=",
+  "Hash": "pnMrl4rN2jlE7K4ky1bDo4DAdNV54k4XJQOBR834S54=",
   "Source": "InsuranceWebApp",
   "BasePath": "_content/InsuranceWebApp",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pkc9s3eilr",
-      "Integrity": "F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=",
+      "Fingerprint": "8dfkvwvazf",
+      "Integrity": "NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\hospital.js"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "igvd5dt09m",
-      "Integrity": "ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=",
+      "Fingerprint": "1th4gmbqyc",
+      "Integrity": "23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\map.js"
@@ -19225,8 +19225,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ibug073rb",
-      "Integrity": "SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=",
+      "Fingerprint": "vr3j8nn6xt",
+      "Integrity": "202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\map\\style.json"
@@ -19246,8 +19246,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0vl3a8xass",
-      "Integrity": "lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=",
+      "Fingerprint": "qffkhzauex",
+      "Integrity": "2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\map\\tileset.json"
@@ -19604,6 +19604,51 @@
       ]
     },
     {
+      "Route": "js/hospital.8dfkvwvazf.js",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 01:41:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8dfkvwvazf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/hospital.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw="
+        }
+      ]
+    },
+    {
       "Route": "js/hospital.js",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
       "Selectors": [],
@@ -19614,7 +19659,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4085"
+          "Value": "3905"
         },
         {
           "Name": "Content-Type",
@@ -19622,11 +19667,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=\""
+          "Value": "\"NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 02:37:55 GMT"
+          "Value": "Sun, 18 May 2025 01:41:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19636,57 +19681,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA="
+          "Value": "sha256-NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw="
         }
       ]
     },
     {
-      "Route": "js/hospital.pkc9s3eilr.js",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4085"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 02:37:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pkc9s3eilr"
-        },
-        {
-          "Name": "label",
-          "Value": "js/hospital.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA="
-        }
-      ]
-    },
-    {
-      "Route": "js/map.igvd5dt09m.js",
+      "Route": "js/map.1th4gmbqyc.js",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -19696,7 +19696,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2990"
+          "Value": "3033"
         },
         {
           "Name": "Content-Type",
@@ -19704,11 +19704,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=\""
+          "Value": "\"23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 03:17:37 GMT"
+          "Value": "Sun, 18 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19718,7 +19718,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "igvd5dt09m"
+          "Value": "1th4gmbqyc"
         },
         {
           "Name": "label",
@@ -19726,7 +19726,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8="
+          "Value": "sha256-23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc="
         }
       ]
     },
@@ -19741,7 +19741,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2990"
+          "Value": "3033"
         },
         {
           "Name": "Content-Type",
@@ -19749,11 +19749,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=\""
+          "Value": "\"23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 03:17:37 GMT"
+          "Value": "Sun, 18 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -19763,7 +19763,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8="
+          "Value": "sha256-23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc="
         }
       ]
     },
@@ -20036,7 +20036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:02 GMT"
+          "Value": "Sun, 18 May 2025 07:50:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20073,7 +20073,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:02 GMT"
+          "Value": "Sun, 18 May 2025 07:50:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25120,7 +25120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:02 GMT"
+          "Value": "Thu, 15 May 2025 09:06:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25165,7 +25165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 17:54:02 GMT"
+          "Value": "Thu, 15 May 2025 09:06:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94224,51 +94224,6 @@
       ]
     },
     {
-      "Route": "static/map/style.0ibug073rb.json",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41936"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 02:36:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0ibug073rb"
-        },
-        {
-          "Name": "label",
-          "Value": "static/map/style.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI="
-        }
-      ]
-    },
-    {
       "Route": "static/map/style.json",
       "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
       "Selectors": [],
@@ -94279,7 +94234,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41936"
+          "Value": "41927"
         },
         {
           "Name": "Content-Type",
@@ -94287,11 +94242,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=\""
+          "Value": "\"202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 02:36:21 GMT"
+          "Value": "Sun, 18 May 2025 07:48:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94301,13 +94256,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI="
+          "Value": "sha256-202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0="
         }
       ]
     },
     {
-      "Route": "static/map/tileset.0vl3a8xass.json",
-      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
+      "Route": "static/map/style.vr3j8nn6xt.json",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -94316,7 +94271,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22230"
+          "Value": "41927"
         },
         {
           "Name": "Content-Type",
@@ -94324,11 +94279,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=\""
+          "Value": "\"202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 02:10:15 GMT"
+          "Value": "Sun, 18 May 2025 07:48:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94338,15 +94293,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0vl3a8xass"
+          "Value": "vr3j8nn6xt"
         },
         {
           "Name": "label",
-          "Value": "static/map/tileset.json"
+          "Value": "static/map/style.json"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc="
+          "Value": "sha256-202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0="
         }
       ]
     },
@@ -94361,7 +94316,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22230"
+          "Value": "22227"
         },
         {
           "Name": "Content-Type",
@@ -94369,11 +94324,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=\""
+          "Value": "\"2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 May 2025 02:10:15 GMT"
+          "Value": "Sun, 18 May 2025 07:50:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -94383,7 +94338,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc="
+          "Value": "sha256-2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY="
+        }
+      ]
+    },
+    {
+      "Route": "static/map/tileset.qffkhzauex.json",
+      "AssetFile": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 May 2025 07:50:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qffkhzauex"
+        },
+        {
+          "Name": "label",
+          "Value": "static/map/tileset.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY="
         }
       ]
     },

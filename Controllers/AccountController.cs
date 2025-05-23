@@ -1,4 +1,5 @@
-﻿using InsuranceWebApp.Data;
+﻿using System.Text.Json;
+using InsuranceWebApp.Data;
 using InsuranceWebApp.Models;
 using InsuranceWebApp.Services;
 using Microsoft.AspNetCore.Identity;
@@ -152,7 +153,8 @@ namespace InsuranceWebApp.Controllers
         public async Task<IActionResult> GetZaloUserLocation(string userAccessToken,string token)
         {
             var result= await _zaloApiService.GetZaloUserInfoAsync(userAccessToken,token);
-            return Json(result);
+            var jsonString = JsonDocument.Parse(result);
+            return Json(jsonString);
         }
      
 

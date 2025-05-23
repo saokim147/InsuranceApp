@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "ContainingType": "InsuranceWebApp.Controllers.InternalApiController",
+    "Method": "ExportFile",
+    "RelativePath": "api/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isBlackList",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "lang",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cityName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

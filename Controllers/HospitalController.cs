@@ -62,16 +62,6 @@ namespace InsuranceWebApp.Controllers
             return View("_SearchList", searchViewModelList);
         }
 
-
-        public IActionResult Check()
-        {
-            // Response.Headers.AccessControlAllowOrigin = "https://localhost:2999";
-            // Response.Headers.AccessControlAllowMethods = "*";
-            // Response.Headers.AccessControlAllowHeaders = "*";
-            return Json("OK");
-        }
-
-
         public async Task<IActionResult> Index(
             int page = 1,
             int pageSize = 5,
@@ -358,10 +348,6 @@ namespace InsuranceWebApp.Controllers
             hospital.CityId = model.CityId;
             hospital.DistrictId = model.DistrictId;
             hospital.WardId = model.WardId;
-        }
-        public IActionResult Testing()
-        {
-            return Json("qwe");
         }
     }
 }

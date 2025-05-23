@@ -87,47 +87,43 @@ const failedCreateHandler = () => {
   );
 };
 
+const $id = document.getElementById.bind(document);
+
 document.addEventListener("htmx:afterSwap", (e) => {
-  if (e.detail.elt.id === "editFormContainer") {
-    new AutoCompleteHandler("edit-citySelect", "edit-city-list", "CityId");
-    new AutoCompleteHandler(
-      "edit-districtSelect",
-      "edit-district-list",
-      "DistrictId"
-    );
-    new AutoCompleteHandler("edit-wardSelect", "edit-ward-list", "WardId");
-    document.getElementById("edit-citySelect").value = currentCityName;
-    document.getElementById("edit-districtSelect").value = currentDistrictName;
-    document.getElementById("edit-wardSelect").value = currentWardName;
-    document.addEventListener("successUpdateEvent", successEditHandler);
-    document.addEventListener("failedUpdateEvent", failedEditHandler);
-  }
+    if (e.detail.elt.id === "editFormContainer") {
+        new AutoCompleteHandler("edit-citySelect", "edit-city-list", "CityId");
+        new AutoCompleteHandler("edit-districtSelect", "edit-district-list", "DistrictId");
+        new AutoCompleteHandler("edit-wardSelect", "edit-ward-list", "WardId");
+
+        $id("edit-citySelect").value = currentCityName;
+        $id("edit-districtSelect").value = currentDistrictName;
+        $id("edit-wardSelect").value = currentWardName;
+
+        document.addEventListener("successUpdateEvent", successEditHandler);
+        document.addEventListener("failedUpdateEvent", failedEditHandler);
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  new AutoCompleteHandler("create-citySelect", "create-city-list", "CityId");
-  new AutoCompleteHandler(
-    "create-districtSelect",
-    "create-district-list",
-    "DistrictId"
-  );
-  new AutoCompleteHandler("create-wardSelect", "create-ward-list", "WardId");
-  document.addEventListener("successCreateEvent", successCreateHandler);
-  document.addEventListener("failedCreateEvent", failedCreateHandler);
-  // accordation
-  document.getElementById("toggle-btn").addEventListener("click", () => {
-    let accordation = document.getElementById("accordation");
-    accordation.style.display =
-      accordation.style.display === "none" ? "inline-block" : "none";
-  });
+    new AutoCompleteHandler("create-citySelect", "create-city-list", "CityId");
+    new AutoCompleteHandler("create-districtSelect", "create-district-list", "DistrictId");
+    new AutoCompleteHandler("create-wardSelect", "create-ward-list", "WardId");
 
-  document.getElementById("reset-btn").addEventListener("click", () => {
-    document.getElementById("in-patient-checkbox").checked = false;
-    document.getElementById("out-patient-checkbox").checked = false;
-    document.getElementById("dental-checkbox").checked = false;
-    document.getElementById("public-hospital-checkbox").checked = false;
-    document.getElementById("citySelect").value = "";
-    document.getElementById("districtSelect").value = "";
-    document.getElementById("wardSelect").value = "";
-  });
+    document.addEventListener("successCreateEvent", successCreateHandler);
+    document.addEventListener("failedCreateEvent", failedCreateHandler);
+
+    $id("toggle-btn").addEventListener("click", () => {
+        let accordation = $id("accordation");
+        accordation.style.display = accordation.style.display === "none" ? "inline-block" : "none";
+    });
+
+    $id("reset-btn").addEventListener("click", () => {
+        $id("in-patient-checkbox").checked = false;
+        $id("out-patient-checkbox").checked = false;
+        $id("dental-checkbox").checked = false;
+        $id("public-hospital-checkbox").checked = false;
+        $id("citySelect").value = "";
+        $id("districtSelect").value = "";
+        $id("wardSelect").value = "";
+    });
 });

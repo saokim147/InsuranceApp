@@ -3,32 +3,92 @@
   "WorkspaceRootPath": "D:\\Do an\\InsuranceWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\searchbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\searchbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\toast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\toast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\sprite.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\sprite.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\hospitalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\repository\\ihospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:repository\\ihospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\themeswitch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\themeswitch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:controllers\\mapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\tileset.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\tileset.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\style.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\style.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\hospital.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\hospital.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\sprite.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\sprite.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\zaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\izaloapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,36 +99,8 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\imapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\style.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\style.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\static\\map\\tileset.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\static\\map\\tileset.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:data\\mapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\map.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\searchbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\searchbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -106,10 +138,6 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\map\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\taghelpers\\searchboxtaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:taghelpers\\searchboxtaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -136,10 +164,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\taghelpers\\paginateprevtaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:taghelpers\\paginateprevtaghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\hospital.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\hospital.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\hospital\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -170,16 +194,8 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\data\\searchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:data\\searchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\themeswitch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\themeswitch.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\hospital\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -202,10 +218,6 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:resources\\sharedresource.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\toast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\toast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\shared\\_languageselect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\shared\\_languageselect.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -214,20 +226,12 @@
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\wwwroot\\js\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:wwwroot\\js\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\views\\hospital\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:views\\hospital\\deleteconfirm.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\data\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:data\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\resources\\views\\hospital\\create.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
@@ -260,10 +264,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\helper\\hospitalmodelextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:helper\\hospitalmodelextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\repository\\ihospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|solutionrelative:repository\\ihospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94971378-FBC2-4BF1-8AE5-40C4B6F05705}|InsuranceWebApp.csproj|d:\\do an\\insurancewebapp\\services\\fileprocessorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -301,7 +301,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -326,139 +326,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAADwv48AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:54:53.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ZaloApiService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
-              "RelativeDocumentMoniker": "Services\\ZaloApiService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
-              "RelativeToolTip": "Services\\ZaloApiService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADgvxYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:03:10.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "HospitalController.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
               "RelativeDocumentMoniker": "Controllers\\HospitalController.cs",
               "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\HospitalController.cs",
               "RelativeToolTip": "Controllers\\HospitalController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAawI0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAcwGwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T09:00:24.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAawG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:36:00.082Z",
+              "WhenOpened": "2025-04-02T09:00:24.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MailData.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\MailData.cs",
-              "RelativeDocumentMoniker": "Services\\MailData.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\MailData.cs",
-              "RelativeToolTip": "Services\\MailData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T02:53:12.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "style.json",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
-              "RelativeDocumentMoniker": "wwwroot\\static\\map\\style.json",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
-              "RelativeToolTip": "wwwroot\\static\\map\\style.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-16T14:44:51.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "tileset.json",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
-              "RelativeDocumentMoniker": "wwwroot\\static\\map\\tileset.json",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
-              "RelativeToolTip": "wwwroot\\static\\map\\tileset.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAjwBAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:19:17.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MapDTO.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\MapDTO.cs",
-              "RelativeDocumentMoniker": "Data\\MapDTO.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\MapDTO.cs",
-              "RelativeToolTip": "Data\\MapDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:41:35.114Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MapController.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\MapController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MapController.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\MapController.cs",
-              "RelativeToolTip": "Controllers\\MapController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAawBYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:30:31.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "searchBox.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\searchBox.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\searchBox.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\searchBox.js",
-              "RelativeToolTip": "wwwroot\\js\\searchBox.js",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAawGQAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-03T14:43:52.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:18:43.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "sprite.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\sprite.json",
               "RelativeDocumentMoniker": "wwwroot\\static\\map\\sprite.json",
@@ -466,359 +346,124 @@
               "RelativeToolTip": "wwwroot\\static\\map\\sprite.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T02:14:39.309Z"
+              "WhenOpened": "2025-05-05T02:14:39.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IZaloApiService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IZaloApiService.cs",
-              "RelativeDocumentMoniker": "Services\\IZaloApiService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\IZaloApiService.cs",
-              "RelativeToolTip": "Services\\IZaloApiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T02:53:39.081Z"
+              "DocumentIndex": 0,
+              "Title": "searchBox.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\searchBox.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\searchBox.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\searchBox.js",
+              "RelativeToolTip": "wwwroot\\js\\searchBox.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-03T14:43:52.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "styles.css",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-27T08:19:15.494Z"
+              "DocumentIndex": 1,
+              "Title": "toast.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\toast.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\toast.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\toast.js",
+              "RelativeToolTip": "wwwroot\\js\\toast.js",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwFkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-03T14:45:53.581Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IMapService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IMapService.cs",
-              "RelativeDocumentMoniker": "Services\\IMapService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\IMapService.cs",
-              "RelativeToolTip": "Services\\IMapService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:27:01.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T15:52:17.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationUser.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\ApplicationUser.cs",
-              "RelativeToolTip": "Data\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:15:12.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MapService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\MapService.cs",
-              "RelativeDocumentMoniker": "Services\\MapService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\MapService.cs",
-              "RelativeToolTip": "Services\\MapService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:27:08.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AspNetUserClaim.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetUserClaim.cs",
-              "RelativeDocumentMoniker": "Data\\AspNetUserClaim.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetUserClaim.cs",
-              "RelativeToolTip": "Data\\AspNetUserClaim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:15:14.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "map.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\map.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
-              "RelativeToolTip": "wwwroot\\js\\map.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAhwAMAAAApAAAAAAAAAA==",
+              "Title": "themeSwitch.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\themeSwitch.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\themeSwitch.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\themeSwitch.js",
+              "RelativeToolTip": "wwwroot\\js\\themeSwitch.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-02T04:41:36.989Z"
+              "WhenOpened": "2025-04-03T14:45:51.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAACYAAAAAAAAAAAAWwDUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-06T17:40:20.6Z"
+              "DocumentIndex": 4,
+              "Title": "table.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\table.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\table.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\table.js",
+              "RelativeToolTip": "wwwroot\\js\\table.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-03T14:45:24.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AspNetRoleClaim.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRoleClaim.cs",
-              "RelativeDocumentMoniker": "Data\\AspNetRoleClaim.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRoleClaim.cs",
-              "RelativeToolTip": "Data\\AspNetRoleClaim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:15:13.903Z"
+              "WhenOpened": "2025-04-07T07:54:53.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AspNetRole.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRole.cs",
-              "RelativeDocumentMoniker": "Data\\AspNetRole.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRole.cs",
-              "RelativeToolTip": "Data\\AspNetRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IHospitalRepository.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Repository\\IHospitalRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IHospitalRepository.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Repository\\IHospitalRepository.cs",
+              "RelativeToolTip": "Repository\\IHospitalRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T09:15:15.763Z"
+              "WhenOpened": "2025-04-02T05:08:14.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
-              "WhenOpened": "2025-04-25T09:22:09.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PartialTagHelperBase.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PartialTagHelperBase.cs",
-              "RelativeDocumentMoniker": "TagHelpers\\PartialTagHelperBase.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PartialTagHelperBase.cs",
-              "RelativeToolTip": "TagHelpers\\PartialTagHelperBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ExportService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ExportService.cs",
+              "RelativeDocumentMoniker": "Services\\ExportService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ExportService.cs",
+              "RelativeToolTip": "Services\\ExportService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:37:23.233Z"
+              "WhenOpened": "2025-04-03T10:18:23.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PaginatePrevTagHelper.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PaginatePrevTagHelper.cs",
-              "RelativeDocumentMoniker": "TagHelpers\\PaginatePrevTagHelper.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PaginatePrevTagHelper.cs",
-              "RelativeToolTip": "TagHelpers\\PaginatePrevTagHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:37:25.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Map\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Map\\Index.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Map\\Index.cshtml",
-              "RelativeToolTip": "Views\\Map\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-02T04:30:03.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "HospitalRepository.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Repository\\HospitalRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\HospitalRepository.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Repository\\HospitalRepository.cs",
-              "RelativeToolTip": "Repository\\HospitalRepository.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAswE0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:26:54.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "_HospitalList.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_HospitalList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\_HospitalList.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_HospitalList.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\_HospitalList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T01:33:28.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SearchBoxTagHelper.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SearchBoxTagHelper.cs",
-              "RelativeDocumentMoniker": "TagHelpers\\SearchBoxTagHelper.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SearchBoxTagHelper.cs",
-              "RelativeToolTip": "TagHelpers\\SearchBoxTagHelper.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAkwDIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T16:52:29.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "SelectTagHelper.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SelectTagHelper.cs",
-              "RelativeDocumentMoniker": "TagHelpers\\SelectTagHelper.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SelectTagHelper.cs",
-              "RelativeToolTip": "TagHelpers\\SelectTagHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:53:10.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\Index.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Index.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\Index.cshtml",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAwKQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-02T04:34:23.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "lib.es5.d.ts",
-              "DocumentMoniker": "D:\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
-              "RelativeDocumentMoniker": "..\\..\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
-              "ToolTip": "D:\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
-              "RelativeToolTip": "..\\..\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
-              "ViewState": "AgIAAOYEAAAAAAAAAAAvwPEEAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-04-25T02:16:07.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ButtonTagHelper.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\ButtonTagHelper.cs",
-              "RelativeDocumentMoniker": "TagHelpers\\ButtonTagHelper.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\ButtonTagHelper.cs",
-              "RelativeToolTip": "TagHelpers\\ButtonTagHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:53:39.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\Edit.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\Edit.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAQwCkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-02T04:34:23.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAASwBkAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T04:37:54.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\Privacy.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T13:58:58.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "DeleteConfirm.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\DeleteConfirm.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\DeleteConfirm.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\DeleteConfirm.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\DeleteConfirm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T06:54:56.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBMAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "tileset.json",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
+              "RelativeDocumentMoniker": "wwwroot\\static\\map\\tileset.json",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\tileset.json",
+              "RelativeToolTip": "wwwroot\\static\\map\\tileset.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T02:18:37.944Z"
+              "WhenOpened": "2025-04-08T02:19:17.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "hospital.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\hospital.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
-              "RelativeToolTip": "wwwroot\\js\\hospital.js",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAMwHYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-03T14:45:22.446Z"
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-08T02:18:43.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "_SearchList.cshtml",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_SearchList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hospital\\_SearchList.cshtml",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_SearchList.cshtml",
-              "RelativeToolTip": "Views\\Hospital\\_SearchList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T01:33:26.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 17,
               "Title": "package.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -830,7 +475,427 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MapController.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Controllers\\MapController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MapController.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Controllers\\MapController.cs",
+              "RelativeToolTip": "Controllers\\MapController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:30:31.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "map.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\map.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\map.js",
+              "RelativeToolTip": "wwwroot\\js\\map.js",
+              "ViewState": "AgIAACsAAAAAAAAAAAAawDYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-02T04:41:36.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "style.json",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
+              "RelativeDocumentMoniker": "wwwroot\\static\\map\\style.json",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\style.json",
+              "RelativeToolTip": "wwwroot\\static\\map\\style.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-16T14:44:51.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\Index.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Index.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\Index.cshtml",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAawMIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T04:34:23.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "hospital.js",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\hospital.js",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\hospital.js",
+              "RelativeToolTip": "wwwroot\\js\\hospital.js",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAawFkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-03T14:45:22.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAawCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T16:36:00.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MapService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\MapService.cs",
+              "RelativeDocumentMoniker": "Services\\MapService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\MapService.cs",
+              "RelativeToolTip": "Services\\MapService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwAwAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:27:08.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MapDTO.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\MapDTO.cs",
+              "RelativeDocumentMoniker": "Data\\MapDTO.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\MapDTO.cs",
+              "RelativeToolTip": "Data\\MapDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T05:41:35.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MailData.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\MailData.cs",
+              "RelativeDocumentMoniker": "Services\\MailData.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\MailData.cs",
+              "RelativeToolTip": "Services\\MailData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T02:53:12.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ZaloApiService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ZaloApiService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ZaloApiService.cs",
+              "RelativeToolTip": "Services\\ZaloApiService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:03:10.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IZaloApiService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IZaloApiService.cs",
+              "RelativeDocumentMoniker": "Services\\IZaloApiService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\IZaloApiService.cs",
+              "RelativeToolTip": "Services\\IZaloApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T02:53:39.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "styles.css",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-27T08:19:15.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IMapService.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\IMapService.cs",
+              "RelativeDocumentMoniker": "Services\\IMapService.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\IMapService.cs",
+              "RelativeToolTip": "Services\\IMapService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:27:01.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T15:52:17.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationUser.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:15:12.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AspNetUserClaim.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetUserClaim.cs",
+              "RelativeDocumentMoniker": "Data\\AspNetUserClaim.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetUserClaim.cs",
+              "RelativeToolTip": "Data\\AspNetUserClaim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:15:14.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAACYAAAAAAAAAAAAWwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-06T17:40:20.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AspNetRoleClaim.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRoleClaim.cs",
+              "RelativeDocumentMoniker": "Data\\AspNetRoleClaim.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRoleClaim.cs",
+              "RelativeToolTip": "Data\\AspNetRoleClaim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:15:13.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AspNetRole.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRole.cs",
+              "RelativeDocumentMoniker": "Data\\AspNetRole.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Data\\AspNetRole.cs",
+              "RelativeToolTip": "Data\\AspNetRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:15:15.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
+              "WhenOpened": "2025-04-25T09:22:09.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PartialTagHelperBase.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PartialTagHelperBase.cs",
+              "RelativeDocumentMoniker": "TagHelpers\\PartialTagHelperBase.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PartialTagHelperBase.cs",
+              "RelativeToolTip": "TagHelpers\\PartialTagHelperBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T01:37:23.233Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 40,
+              "Title": "PaginatePrevTagHelper.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PaginatePrevTagHelper.cs",
+              "RelativeDocumentMoniker": "TagHelpers\\PaginatePrevTagHelper.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\PaginatePrevTagHelper.cs",
+              "RelativeToolTip": "TagHelpers\\PaginatePrevTagHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T01:37:25.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Map\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Map\\Index.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Map\\Index.cshtml",
+              "RelativeToolTip": "Views\\Map\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T04:30:03.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "HospitalRepository.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Repository\\HospitalRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\HospitalRepository.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Repository\\HospitalRepository.cs",
+              "RelativeToolTip": "Repository\\HospitalRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAswE0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T04:26:54.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_HospitalList.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_HospitalList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\_HospitalList.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_HospitalList.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\_HospitalList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T01:33:28.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SearchBoxTagHelper.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SearchBoxTagHelper.cs",
+              "RelativeDocumentMoniker": "TagHelpers\\SearchBoxTagHelper.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SearchBoxTagHelper.cs",
+              "RelativeToolTip": "TagHelpers\\SearchBoxTagHelper.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwDIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:52:29.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SelectTagHelper.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SelectTagHelper.cs",
+              "RelativeDocumentMoniker": "TagHelpers\\SelectTagHelper.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\SelectTagHelper.cs",
+              "RelativeToolTip": "TagHelpers\\SelectTagHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T01:53:10.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "lib.es5.d.ts",
+              "DocumentMoniker": "D:\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
+              "RelativeDocumentMoniker": "..\\..\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
+              "ToolTip": "D:\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
+              "RelativeToolTip": "..\\..\\Visual Studio\\Common7\\IDE\\CommonExtensions\\Microsoft\\TSServer\\lib.es5.d.ts",
+              "ViewState": "AgIAAOYEAAAAAAAAAAAvwPEEAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-04-25T02:16:07.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ButtonTagHelper.cs",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\ButtonTagHelper.cs",
+              "RelativeDocumentMoniker": "TagHelpers\\ButtonTagHelper.cs",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\ButtonTagHelper.cs",
+              "RelativeToolTip": "TagHelpers\\ButtonTagHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T01:53:39.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\Edit.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\Edit.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAQwCkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T04:34:23.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAASwBkAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T04:37:54.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\Privacy.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T13:58:58.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DeleteConfirm.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\DeleteConfirm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\DeleteConfirm.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\DeleteConfirm.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\DeleteConfirm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-07T06:54:56.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-08T02:18:37.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_SearchList.cshtml",
+              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_SearchList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hospital\\_SearchList.cshtml",
+              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_SearchList.cshtml",
+              "RelativeToolTip": "Views\\Hospital\\_SearchList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-06T01:33:26.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "HospitalFindCriterias.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Repository\\HospitalFindCriterias.cs",
               "RelativeDocumentMoniker": "Repository\\HospitalFindCriterias.cs",
@@ -842,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "style.json",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
               "RelativeDocumentMoniker": "wwwroot\\static\\map\\font\\Noto Sans Regular\\style.json",
@@ -854,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "SearchDTO.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\SearchDTO.cs",
               "RelativeDocumentMoniker": "Data\\SearchDTO.cs",
@@ -866,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Hospital\\Create.cshtml",
@@ -878,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "Index.resx",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Resources\\Views\\Hospital\\Index.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Hospital\\Index.resx",
@@ -889,19 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "themeSwitch.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\themeSwitch.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\themeSwitch.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\themeSwitch.js",
-              "RelativeToolTip": "wwwroot\\js\\themeSwitch.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-03T14:45:51.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "maplibre-gl.js",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\lib\\maplibre-gl\\maplibre-gl.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\maplibre-gl\\maplibre-gl.js",
@@ -913,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "maplibre-gl.css",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\lib\\maplibre-gl\\maplibre-gl.css",
               "RelativeDocumentMoniker": "wwwroot\\lib\\maplibre-gl\\maplibre-gl.css",
@@ -926,30 +979,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 53,
-              "Title": "table.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\table.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\table.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\table.js",
-              "RelativeToolTip": "wwwroot\\js\\table.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-03T14:45:24.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "toast.js",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\toast.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\toast.js",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\toast.js",
-              "RelativeToolTip": "wwwroot\\js\\toast.js",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-03T14:45:53.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
               "Title": "SharedResource.resx",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Resources\\SharedResource.resx",
               "RelativeDocumentMoniker": "Resources\\SharedResource.resx",
@@ -960,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "_LanguageSelect.cshtml",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Shared\\_LanguageSelect.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LanguageSelect.cshtml",
@@ -972,7 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "site.js",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -984,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "Hospital.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Data\\Hospital.cs",
               "RelativeDocumentMoniker": "Data\\Hospital.cs",
@@ -996,19 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "ExportService.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Services\\ExportService.cs",
-              "RelativeDocumentMoniker": "Services\\ExportService.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Services\\ExportService.cs",
-              "RelativeToolTip": "Services\\ExportService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAhwDEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:18:23.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "_HospitalList.resx",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Resources\\Views\\Hospital\\_HospitalList.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Hospital\\_HospitalList.resx",
@@ -1019,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "Create.resx",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Resources\\Views\\Hospital\\Create.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Hospital\\Create.resx",
@@ -1030,7 +1047,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "_CityList.cshtml",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_CityList.cshtml",
               "RelativeDocumentMoniker": "Views\\Hospital\\_CityList.cshtml",
@@ -1042,7 +1059,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "CheckBoxTagHelper.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\TagHelpers\\CheckBoxTagHelper.cs",
               "RelativeDocumentMoniker": "TagHelpers\\CheckBoxTagHelper.cs",
@@ -1054,7 +1071,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "SharedResource.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\SharedResource.cs",
               "RelativeDocumentMoniker": "SharedResource.cs",
@@ -1066,7 +1083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "_WardList.cshtml",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Views\\Hospital\\_WardList.cshtml",
               "RelativeDocumentMoniker": "Views\\Hospital\\_WardList.cshtml",
@@ -1078,7 +1095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Css.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Helper\\Css.cs",
               "RelativeDocumentMoniker": "Helper\\Css.cs",
@@ -1090,7 +1107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "HospitalModelExtension.cs",
               "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Helper\\HospitalModelExtension.cs",
               "RelativeDocumentMoniker": "Helper\\HospitalModelExtension.cs",
@@ -1135,18 +1152,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T05:24:50.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "IHospitalRepository.cs",
-              "DocumentMoniker": "D:\\Do an\\InsuranceWebApp\\Repository\\IHospitalRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IHospitalRepository.cs",
-              "ToolTip": "D:\\Do an\\InsuranceWebApp\\Repository\\IHospitalRepository.cs",
-              "RelativeToolTip": "Repository\\IHospitalRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAxwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:08:14.69Z"
             },
             {
               "$type": "Document",

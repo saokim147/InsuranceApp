@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pkc9s3eilr</Fingerprint>
-      <Integrity>F3A3p5EHxxjP266oWupdp1rKQLKEp5gKb3MbHUjFejA=</Integrity>
+      <Fingerprint>8dfkvwvazf</Fingerprint>
+      <Integrity>NAYiRJeTwjXXX1pRhpoIFf4bdAEI2oEx4awTW7CyYYw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\hospital.js'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>igvd5dt09m</Fingerprint>
-      <Integrity>ftaVdlin78XL/07t45FzItfZ0QchXLyoyF9FGgoWtt8=</Integrity>
+      <Fingerprint>1th4gmbqyc</Fingerprint>
+      <Integrity>23SecxtbjgzI8BPB4DOE6y6JhiTo+glwEnIV4gG+usc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\map.js'))</OriginalItemSpec>
@@ -16464,8 +16464,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0ibug073rb</Fingerprint>
-      <Integrity>SCoFY2NtE3TuKqHaYQhG6WZ4xKZKk6lnbMBJs/4k8xI=</Integrity>
+      <Fingerprint>vr3j8nn6xt</Fingerprint>
+      <Integrity>202UDGdVR3JRhRWYhBk/AzS095XiVUJoCvc7WfuiRu0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\static\map\style.json'))</OriginalItemSpec>
@@ -16482,8 +16482,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0vl3a8xass</Fingerprint>
-      <Integrity>lHQ8bEPonqbLWX2B3yosSadjWYsDqo0HnY+vWgV5tfc=</Integrity>
+      <Fingerprint>qffkhzauex</Fingerprint>
+      <Integrity>2jdVMzf81uOE+4KSwd2eI8PVOLY+1Fb6PxvRq305MPY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\static\map\tileset.json'))</OriginalItemSpec>

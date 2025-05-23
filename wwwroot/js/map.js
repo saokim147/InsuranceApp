@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const locationContainer = document.getElementById("location-list");
   const map = new maplibregl.Map({
     container: "map",
-    style: "https://localhost:7262/static/map/style.json",
+      style: "https://api-uat-ibmi.baominh.vn:8500/insurance/static/map/style.json",
     center: defaultLocation,
     zoom: 14,
   });
