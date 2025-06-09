@@ -1,6 +1,6 @@
 {
     "tiles": [
-        "https://composite-alternate-coal-demonstrates.trycloudflare.com/tiles/{z}/{x}/{y}.pbf"
+        "https://api-uat-ibmi.baominh.vn:8500/insurance/tiles/{z}/{x}/{y}.pbf"
     ],
   "name": "OpenMapTiles",
   "format": "pbf",

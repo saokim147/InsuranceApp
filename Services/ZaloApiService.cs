@@ -2,12 +2,12 @@
 
 namespace InsuranceWebApp.Services
 {
-    public class ZaloApiService:IZaloApiService
+    public class ZaloApiService : IZaloApiService
     {
         private readonly string _endpoint = "https://graph.zalo.me/v2.0/me/info";
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
-        public ZaloApiService(HttpClient httpClient, IConfiguration   configuration)
+        public ZaloApiService(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
             _configuration = configuration;
