@@ -4,12 +4,14 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.Extensions.Localization;
 
+
+
 namespace InsuranceWebApp.TagHelpers
 {
     public class CheckBoxTagHelper : InputTagHelper
     {
         private readonly IStringLocalizer<SharedResource> _localizer;
-        public CheckBoxTagHelper(IHtmlGenerator generator, IStringLocalizer<SharedResource> localizer) : base(generator) 
+        public CheckBoxTagHelper(IHtmlGenerator generator, IStringLocalizer<SharedResource> localizer) : base(generator)
         {
             _localizer = localizer;
         }
@@ -19,7 +21,7 @@ namespace InsuranceWebApp.TagHelpers
         [HtmlAttributeName("id")]
         public string Id { get; set; } = string.Empty;
         [HtmlAttributeName("value")]
-        public string Value {get; set; }=string.Empty;
+        public string Value { get; set; } = string.Empty;
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {

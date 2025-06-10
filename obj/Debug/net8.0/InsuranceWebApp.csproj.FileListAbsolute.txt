@@ -388,10 +388,11 @@ D:\Do an\InsuranceWebApp\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.Direc
 D:\Do an\InsuranceWebApp\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
 D:\Do an\InsuranceWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
 D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.sourcelink.json
-D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.SharedResource.resources
-D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.SharedResource.en.resources
-D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.SharedResource.vi.resources
 D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.Views.Hospital.Create.resources
 D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.Views.Hospital.Create.en.resources
 D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.Resources.Views.Hospital.Create.vi.resources
-D:\Do an\InsuranceWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.SharedResource.resources
+D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.SharedResource.en.resources
+D:\Do an\InsuranceWebApp\obj\Debug\net8.0\InsuranceWebApp.SharedResource.vi.resources
+D:\Do an\InsuranceWebApp\obj\Debug\net8.0\en\InsuranceWebApp.resources.cs
+D:\Do an\InsuranceWebApp\obj\Debug\net8.0\vi\InsuranceWebApp.resources.cs
