@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "20PBgcvfljQ=",
+  "dgSpecHash": "0dYs0V0mUiQ=",
   "success": true,
-  "projectFilePath": "D:\\Do an\\InsuranceWebApp\\InsuranceWebApp.csproj",
+  "projectFilePath": "D:\\InsuranceApp\\InsuranceWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thinv\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\thinv\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
